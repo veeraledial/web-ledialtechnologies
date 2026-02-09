@@ -1,26 +1,128 @@
 @import "tailwindcss";
 
+/* LaDial Brand Colors - Premium Navy & Red Palette */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary Navy - Header, Hero */
+  --brand-navy: #0b1e3c;
+  --brand-navy-secondary: #142b5f;
+  --brand-navy-light: #142b5f;
+  /* Footer - darker than header */
+  --brand-footer: #0a162b;
+  --background: #f4f6fa;
+  /* Accent Red */
+  --brand-red: #c4161c;
+  --brand-red-hover: #a10f14;
+  /* Backgrounds - alternate sections */
+  --neutral: #f4f6fa;
+  --neutral-dark: #e8ecf4;
+  /* Text */
+  --charcoal: #0b1e3c;
+  --foreground: #0b1e3c;
+  --muted: #6b7280;
+  --muted-foreground: #6b7280;
+  --accent: #c4161c;
+  --accent-hover: #a10f14;
+  --border: #e5e7eb;
+  --card: #e0e1dd;
+  --surface: #e0e1dd;
 }
 
 @theme inline {
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-red: var(--brand-red);
+  --color-charcoal: var(--charcoal);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-surface: var(--surface);
+  --font-sans: var(--font-syne), system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+/* Section spacing - 80px top & bottom */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Max container 1200px */
+.max-brand-width {
+  max-width: 1200px;
+}
+
+/* Scroll reveal animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-reveal--fade-in {
+  transform: none;
+}
+.scroll-reveal--fade-in.is-visible {
+  transform: none;
+}
+.scroll-reveal--slide-left {
+  transform: translateX(32px);
+}
+.scroll-reveal--slide-left.is-visible {
+  transform: translateX(0);
+}
+.scroll-reveal--slide-right {
+  transform: translateX(-32px);
+}
+.scroll-reveal--slide-right.is-visible {
+  transform: translateX(0);
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Card hover lift */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -12px rgba(11, 30, 60, 0.15);
+}
+
+/* Hero: navy gradient 135deg + subtle grid */
+.hero-dark {
+  background-color: #0b1e3c;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(135deg, #0b1e3c 0%, #142b5f 100%);
+  background-size: 48px 48px, 48px 48px, 100% 100%;
+  background-position: 0 0, 0 0, 0 0;
 }
