@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ALL_PRODUCTS } from "@/lib/data/products";
+import { asset } from "@/lib/utils/assets";
 import { HeroProductScreen } from "./HeroProductScreen";
 
 const AUTOPLAY_MS = 6000;
@@ -132,7 +133,7 @@ export function HeroCarousel() {
       <div className="absolute inset-0 z-0 bg-[var(--brand-footer)]">
         <Image
           key={heroBgSrc}
-          src={heroBgSrc}
+          src={asset(heroBgSrc)}
           alt=""
           fill
           priority
@@ -192,7 +193,7 @@ export function HeroCarousel() {
                         {rightDisplayImageSrc ? (
                           <Image
                             key={rightDisplayImageSrc}
-                            src={rightDisplayImageSrc}
+                            src={asset(rightDisplayImageSrc)}
                             alt="Hero slide visual"
                             fill
                             priority

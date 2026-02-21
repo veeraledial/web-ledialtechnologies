@@ -3,6 +3,7 @@ import Image from "next/image";
 import { PRODUCT_CATEGORIES } from "@/types/product";
 import { getProductsByCategory } from "@/lib/data/products";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { asset } from "@/lib/utils/assets";
 
 export function ProductCategoriesGrid() {
   return (
@@ -30,7 +31,7 @@ export function ProductCategoriesGrid() {
                   <div className="relative aspect-[16/10] bg-gradient-to-br from-[var(--neutral-dark)] to-[var(--border)] transition duration-300 group-hover:from-[var(--brand-navy)]/15 group-hover:to-[var(--brand-red)]/10">
                     {cardImage ? (
                       <Image
-                        src={cardImage}
+                        src={asset(cardImage)}
                         alt={cat.label}
                         fill
                         sizes="(max-width: 1024px) 100vw, 33vw"

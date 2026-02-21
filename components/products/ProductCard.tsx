@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Product } from "@/types/product";
+import { asset } from "@/lib/utils/assets";
 
 interface ProductCardProps {
   product: Product;
@@ -16,7 +17,7 @@ export function ProductCard({ product }: ProductCardProps) {
       <div className="relative aspect-video bg-gradient-to-br from-[var(--neutral-dark)] to-[var(--border)] transition group-hover:from-[var(--brand-navy)]/5 group-hover:to-[var(--brand-red)]/5">
         {cardImage ? (
           <Image
-            src={cardImage}
+            src={asset(cardImage)}
             alt={product.name}
             fill
             sizes="(max-width: 1024px) 100vw, 33vw"

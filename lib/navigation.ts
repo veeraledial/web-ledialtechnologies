@@ -15,15 +15,6 @@ export const MAIN_NAV: NavItem[] = [
   {
     label: "About",
     href: "/about",
-    children: [
-      { label: "Company Overview", href: "/about/company-overview" },
-      { label: "Vision & Mission", href: "/about/vision-mission" },
-      { label: "Manufacturing Facilities", href: "/about/facilities" },
-      { label: "Leadership Team", href: "/about/leadership" },
-      { label: "Global Presence", href: "/about/global-presence" },
-      { label: "Certifications", href: "/about/certifications" },
-      { label: "Careers", href: "/about/careers" },
-    ],
   },
   {
     label: "Products",
@@ -53,10 +44,6 @@ export const MAIN_NAV: NavItem[] = [
   {
     label: "Projects",
     href: "/projects",
-  },
-  {
-    label: "Blog",
-    href: "/blog",
   },
   {
     label: "Contact",

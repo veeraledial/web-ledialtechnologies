@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Product } from "@/types/product";
+import { asset } from "@/lib/utils/assets";
 
 interface ProductHeroProps {
   product: Product;
@@ -26,7 +27,7 @@ export function ProductHero({ product, categoryLabel }: ProductHeroProps) {
               <div className="relative w-full max-w-lg">
                 <div className="relative aspect-video w-full sm:aspect-[4/3]">
                   <Image
-                    src={heroImage}
+                    src={asset(heroImage)}
                     alt={product.name}
                     fill
                     priority

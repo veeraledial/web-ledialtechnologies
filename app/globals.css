@@ -5,13 +5,13 @@
   /* Brand palette */
   --color-light: #f8fafc; /* near-white */
   --color-dark: #0b1f33; /* deep navy */
-  --accent: #d11f2e; /* brand red */
-  --accent-hover: #b51a27;
+  --accent: #e86a5c; /* soft coral */
+  --accent-hover: #d85c4f;
 
   /* RGB helpers (for alpha / gradients) */
   --light-rgb: 248 250 252;
   --dark-rgb: 11 31 51;
-  --accent-rgb: 209 31 46;
+  --accent-rgb: 232 106 92;
 
   /* Convenience aliases */
   --color-accent: var(--accent);
@@ -47,8 +47,8 @@
   --shadow-sm: 0 1px 3px rgb(var(--dark-rgb) / 0.08);
   --shadow-card: 0 6px 16px rgb(var(--dark-rgb) / 0.08);
   --shadow-card-hover: 0 16px 34px rgb(var(--dark-rgb) / 0.14);
-  --shadow-glow-red: 0 0 0 1px rgb(var(--accent-rgb) / 0.28), 0 10px 26px rgb(var(--accent-rgb) / 0.14);
-  --shadow-glow-red-hover: 0 0 0 1px rgb(var(--accent-rgb) / 0.42), 0 14px 34px rgb(var(--accent-rgb) / 0.18);
+  --shadow-glow-red: 0 0 0 1px rgb(var(--accent-rgb) / 0.22), 0 10px 26px rgb(var(--accent-rgb) / 0.12);
+  --shadow-glow-red-hover: 0 0 0 1px rgb(var(--accent-rgb) / 0.32), 0 14px 34px rgb(var(--accent-rgb) / 0.16);
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-smooth: 350ms cubic-bezier(0.22, 1, 0.36, 1);

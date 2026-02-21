@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Product } from "@/types/product";
+import { asset } from "@/lib/utils/assets";
 
 interface ProductGalleryProps {
   product: Product;
@@ -19,7 +20,7 @@ export function ProductGallery({ product }: ProductGalleryProps) {
               className="relative aspect-video overflow-hidden rounded-[8px] bg-gradient-to-br from-[var(--neutral-dark)] to-[var(--border)]"
             >
               <Image
-                src={src}
+                src={asset(src)}
                 alt={`${product.name} image ${i + 1}`}
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"

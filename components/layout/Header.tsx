@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { MAIN_NAV } from "@/lib/navigation";
+import { asset } from "@/lib/utils/assets";
 import { Button } from "@/components/ui/Button";
 import { MobileNav } from "./MobileNav";
 
@@ -16,7 +17,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center transition opacity-90 hover:opacity-100">
           <Image
-            src="/images/logo/logo.png"
+            src={asset("/images/logo/logo.png")}
             alt="LaDial Technologies"
             width={160}
             height={44}

@@ -1,0 +1,541 @@
+{
+  "services": {
+    "categories": [
+  
+      {
+        "name": "Standee A‑Type Display Services",
+        "slug": "standee-a-type-display-services",
+        "subcategories": [
+          {
+            "name": "Vertical A-Frame Displays",
+            "slug": "vertical-a-frame-displays",
+            "keyCharacteristics": [
+              "True Portrait Orientation: Unlike tilted easel designs, these screens are mounted perfectly vertical within the A-frame, providing a clean, architectural look that mimics a traditional poster.",
+              "Double-Sided Options: Many vertical A-frames are designed to be double-sided, allowing you to capture the attention of audiences moving in both directions.",
+              "Slim Profile: These units are typically very thin, using specialized LED or LCD panels to maintain a sleek, professional appearance that fits easily into narrow hallways or storefronts.",
+              "High Stability: They are built on a solid A-frame base, often with weighted bottom plates or locking mechanisms to prevent tipping in busy environments."
+            ],
+            "applications": [
+              "Retail Storefronts: Placing a high-brightness vertical screen in a window to showcase high-fashion imagery or seasonal sales.",
+              "Cinemas & Theaters: Used as \"Digital Movie Posters\" to display upcoming showtimes and trailers in a vertical format.",
+              "Corporate Lobbies: Acting as a digital directory or welcome board that stands upright to greet visitors.",
+              "High-End Galas: Providing elegant, vertical digital signage for branding and sponsorship loops at formal events."
+            ]
+          },
+  
+          {
+            "name": "Foldable A-Frame Displays",
+            "slug": "foldable-a-frame-displays",
+            "keyCharacteristics": [
+              "Collapsible Design: Unlike standard A-frames with a fixed tilt, foldable versions feature heavy-duty hinges and a locking stay bar that allow the two sides of the frame to fold completely flat for storage or transport.",
+              "Dual-Sided Option: Many models are available as double-sided units, allowing you to catch the attention of foot traffic from both directions with a single piece of hardware.",
+              "Battery Power: Many modern foldable standees are equipped with rechargeable lithium batteries, allowing for 8 to 12 hours of cordless operation in areas without power outlets.",
+              "Durable Build: They are typically constructed from lightweight aluminum or powder-coated steel to protect the screen during frequent movement."
+            ],
+            "applications": [
+              "Exhibitions & Events: Ideal for vendors who need to quickly set up and pack down their branding materials each day.",
+              "Sidewalk Advertising: Used by restaurants and cafes as a digital replacement for traditional chalkboard signs.",
+              "Temporary Directional Signage: Providing real-time information for weddings, conferences, or private events in various indoor and outdoor locations."
+            ]
+          },
+  
+          {
+            "name": "Tilt Digital Standees",
+            "slug": "tilt-digital-standees",
+            "keyCharacteristics": [
+              "Ergonomic Viewing Angle: The screen is angled (typically between 15° and 30°) so that the content is directly in the line of sight for pedestrians, making it easier to read than a perfectly vertical screen at close range.",
+              "Low Profile: They often have a lower height than standard vertical \"totem\" kiosks, making them less obtrusive in open floor plans.",
+              "Stable \"A-Frame\" Base: Most models use an A-frame or weighted kickstand design, ensuring they remain stable in high-traffic areas like mall corridors or airport terminals.",
+              "High Resolution: Since viewers are very close, these usually feature fine pixel pitches (e.g., P1.5 to P2.5) for crisp text and high-quality images."
+            ],
+            "applications": [
+              "Restaurants & Cafes: Used as digital menus or \"special of the day\" boards placed right at the entrance.",
+              "Wayfinding in Malls: Positioned at floor junctions to provide interactive maps or store directories.",
+              "Hotel Lobbies: Displaying daily event schedules or welcome messages at a comfortable reading height.",
+              "Trade Show Booths: Serving as interactive product brochures that visitors can easily view while standing."
+            ]
+          }
+        ]
+      },
+  
+      {
+        "name": "Outdoor LED Display Services",
+        "slug": "outdoor-led-display-services",
+        "subcategories": [
+          {
+            "name": "Outdoor Mobile LED Displays",
+            "slug": "outdoor-mobile-led-displays",
+            "keyCharacteristics": [
+              "Rapid Deployment: Unlike fixed installations, mobile displays are ready to operate almost immediately upon arrival, with hydraulic systems often used to lift and rotate the screen into the optimal viewing position.",
+              "Self-Sustained Power: Many mobile LED trucks are equipped with their own onboard generators, allowing them to function in remote locations or areas without direct access to the power grid.",
+              "All-Weather Performance: These screens are built to the same rugged standards as fixed outdoor displays, featuring high IP65+ ratings for water and dust resistance, and high brightness (up to 8,000+ nits) for visibility in direct sunlight.",
+              "Dynamic Positioning: The ability to move the display throughout the day allows advertisers to follow foot traffic or target specific events, such as concerts, parades, or political rallies."
+            ],
+            "applications": [
+              "Mobile Advertising: Driving through busy city centers or parking at high-traffic intersections to showcase brand campaigns.",
+              "Outdoor Cinemas & Live Events: Serving as a temporary movie screen or a live broadcast feed for public viewing parties in parks or parking lots.",
+              "Political & Community Rallies: Providing a professional visual platform for speakers in various temporary locations.",
+              "Emergency Information: Used by municipalities to provide real-time updates during public emergencies or large-scale roadworks."
+            ]
+          },
+  
+          {
+            "name": "Outdoor Perimeter/Stadium LED Boards",
+            "slug": "outdoor-perimeter-stadium-led-boards",
+            "keyCharacteristics": [
+              "Soft Top & Mask: They feature a rubber or soft silicone top cover and flexible mask to protect athletes from injury in case of a collision.",
+              "Adjustable Tilt: Many perimeter boards have an adjustable supporting stand (usually 60° to 90°) to ensure the best viewing angle for both the live audience and TV cameras.",
+              "High Refresh Rate: To avoid flickering on live TV broadcasts, these boards typically have high refresh rates of 3840Hz or higher.",
+              "Weatherproof & Durable: Built with an IP65 rating, they are fully waterproof and designed to withstand the impact of balls or equipment.",
+              "Dual-Use Design: Most perimeter cabinets can also be stacked to create a standard large-format video wall, making them a versatile investment for stadiums."
+            ],
+            "applications": [
+              "Live Sports Advertising: Displaying sponsor logos and dynamic ads during soccer, cricket, or rugby matches.",
+              "Real-time Scoreboards: Showing scores, game timers, and player statistics along the sideline.",
+              "Fan Engagement: Displaying social media feeds or crowd prompts during breaks in play."
+            ]
+          },
+  
+          {
+            "name": "Outdoor Fixed Installation LED Displays",
+            "slug": "outdoor-fixed-installation-led-displays",
+            "keyCharacteristics": [
+              "High Brightness: These screens feature a brightness level ranging from 5,000 to 10,000 nits. This ensures that the digital content remains clearly visible even under direct, high-intensity sunlight.",
+              "Weatherproof Design: They are typically built with an IP65 or higher waterproof and dustproof rating. This allows them to operate reliably during heavy rain, high humidity, and extreme temperature fluctuations.",
+              "Massive Scale: Since they are viewed from long distances, these displays often cover large areas and require a robust steel structure to support their significant weight.",
+              "Long Viewing Distance: They use larger pixel pitches (commonly P3 to P16) to maintain image clarity for viewers who are hundreds of meters away, such as those in passing vehicles."
+            ],
+            "applications": [
+              "Digital Billboards: High-impact advertising along highways and in busy urban centers like city squares.",
+              "Building Facades: Integrating large-scale video walls directly into the exterior of shopping malls or stadiums.",
+              "Public Information: Municipalities use these for real-time traffic updates, emergency alerts, or event announcements in public parks.",
+              "Sports Stadiums: Serving as giant scoreboards and live replay screens for thousands of spectators."
+            ]
+          },
+  
+          {
+            "name": "Outdoor LED Billboards",
+            "slug": "outdoor-led-billboards",
+            "keyCharacteristics": [
+              "High Brightness: These displays typically range from 5,000 to 10,000 nits, allowing the content to remain clearly visible even under direct, high-intensity sunlight.",
+              "Rugged Protection: They feature high IP ratings (typically IP65 or higher) to protect sensitive electronics against heavy rain, dust, and wind.",
+              "Variable Pixel Pitch: Depending on the viewing distance, pitches usually range from P3 to P16. Larger pixel pitches are common for roadside boards viewed from hundreds of meters away.",
+              "Energy Efficiency: Modern outdoor screens use advanced cooling systems and high-efficiency LEDs to manage power consumption, which is critical for 24/7 operation."
+            ],
+            "applications": [
+              "Roadside Advertising: Large-scale digital displays along highways for high-reach brand campaigns.",
+              "Building Facades: Integrated into the architecture of shopping centers or skyscrapers in urban centers like Times Square.",
+              "Public Information: Large-format screens in transit hubs or city squares for government or news updates.",
+              "Sports & Events: Serving as massive replay screens or digital scoreboards in stadiums."
+            ]
+          }
+        ]
+      },
+  
+      {
+        "name": "Indoor LED Displays Services",
+        "slug": "indoor-led-displays-services",
+        "subcategories": [
+          {
+            "name": "Fixed Installation LED Display",
+            "slug": "fixed-installation-led-display",
+            "keyCharacteristics": [
+              "Permanent Integration: They are typically bolted to a wall, recessed into a surface, or mounted on a heavy-duty permanent steel structure.",
+              "Seamless Video Walls: These displays are made of multiple small modules that fit together perfectly, creating a single, massive screen without any visible lines or \"bezels\" between panels.",
+              "Custom Sizing: Because they are modular, they can be built to almost any size or aspect ratio, from standard 16:9 screens to ultra-wide ribbons that wrap around a room.",
+              "High Reliability: Designed for 24/7 operation, they often feature redundant power supplies and data paths to ensure they never go dark."
+            ],
+            "applications": [
+              "Corporate Lobbies: Used for high-impact branding and welcoming guests with large-scale visuals.",
+              "Control Rooms: Providing high-resolution data visualization for security, traffic, or utility monitoring.",
+              "Retail Flagships: Creating immersive shopping experiences with large-scale architectural video walls.",
+              "Broadcast Studios: Serving as high-quality, non-flickering backgrounds for news and talk show sets."
+            ]
+          },
+  
+          {
+            "name": "LED Poster Displays",
+            "slug": "led-poster-displays",
+            "keyCharacteristics": [
+              "Plug-and-Play: They are incredibly user-friendly, allowing content to be updated via USB, Wi-Fi, or HDMI without complex setup.",
+              "Highly Portable: These displays are lightweight and often come with built-in wheels or a kickstand, making them easy to move around a venue.",
+              "Versatile Mounting: While usually used as floor-standing posters, they can also be wall-mounted, hung from the ceiling, or even linked together to form a larger video wall.",
+              "High Definition: They typically use small pixel pitches (like P1.8 to P2.5) to ensure text and images are sharp for people walking by at a close distance."
+            ],
+            "applications": [
+              "Retail & Malls: Perfect for showcasing seasonal sales, new arrivals, or high-end luxury branding at store entrances.",
+              "Events & Trade Shows: Used as digital information boards or directional signage that can be updated in real-time.",
+              "Hotel Lobbies & Banks: Frequently used to display welcome messages, exchange rates, or event schedules in a professional manner."
+            ]
+          },
+  
+          {
+            "name": "Flexible LED displays",
+            "slug": "flexible-led-displays",
+            "keyCharacteristics": [
+              "High Flexibility: They can form concave or convex curves, cylinders, waves, and other artistic designs.",
+              "Lightweight and Thin: Their specialized construction makes them much lighter and thinner than standard LED cabinets, simplifying installation on curved surfaces.",
+              "Magnetic Mounting: Most flexible modules use strong magnets for attachment, allowing them to be easily \"stuck\" onto a shaped metal frame for quick assembly and maintenance.",
+              "Seamless Visuals: Like fine pitch displays, these modules connect seamlessly to create a single, continuous image across irregular surfaces."
+            ],
+            "applications": [
+              "Architectural Features: Wrapping around circular columns in malls or airports.",
+              "Stage Design: Creating wave-like backdrops or curved immersive environments for concerts and studios.",
+              "Creative Advertising: Eye-catching retail displays that break the \"rectangular screen\" mold."
+            ]
+          },
+  
+          {
+            "name": "Fine pitch and small pixel pitch LED display",
+            "slug": "fine-pitch-and-small-pixel-pitch-led-display",
+            "keyCharacteristics": [
+              "Small Pixel Pitch: These displays typically have a pixel pitch of less than 2.5mm (e.g., P0.9, P1.2, P1.5).",
+              "High Resolution: Due to the tight spacing between LEDs, these screens can easily achieve 4K and 8K resolutions.",
+              "Seamless Design: Unlike traditional LCD video walls, fine pitch LED displays are modular and can be assembled into any size or shape without visible bezels or gaps.",
+              "High Performance: They offer high refresh rates (up to 7680Hz) for flicker-free visuals and high grayscale for superior color expression even at low brightness.",
+              "Versatile Applications: Common uses include command and control centers, corporate boardrooms, broadcast studios, and luxury retail environments."
+            ],
+            "applications": [
+              "Command and control centers",
+              "Corporate boardrooms",
+              "Broadcast studios",
+              "Luxury retail environments"
+            ]
+          }
+        ]
+      },
+   {
+        "name": "Standees Double-Sided Display Services",
+        "slug": "standees-double-sided-display-services",
+        "subcategories": [
+          {
+            "name": "Rotating Double-Sided Standees",
+            "slug": "rotating-double-sided-standees",
+            "keyCharacteristics": [
+              "360° Visibility: Unlike fixed double-sided units, the rotation allows a single piece of hardware to catch the eyes of everyone in an open area, regardless of their position.",
+              "Dual-Screen Capability: They typically feature two high-definition LED or LCD panels back-to-back, often capable of showing different content on each side to double the advertising real estate.",
+              "Motorized Rotation: The rotation speed is usually adjustable and designed for smooth, silent operation, making them suitable for quiet environments like hotel lobbies or car showrooms.",
+              "High Engagement: The movement of a rotating display naturally draws more attention than a static sign, significantly increasing \"stop and look\" rates for viewers."
+            ],
+            "applications": [
+              "Shopping Mall Atriums: Placed in large open squares to display multiple brand ads to shoppers on all floors.",
+              "Automotive Showrooms: Rotating next to featured vehicles to display specifications, pricing, and dynamic driving footage.",
+              "Exhibition Entrances: Serving as a high-impact greeting board that shows event maps on one side and sponsor logos on the other.",
+              "Luxury Retail: Used as an artistic, moving centerpiece to showcase high-fashion campaigns or jewelry collections."
+            ]
+          },
+          {
+            "name": "Dual-Side Pole Standees",
+            "slug": "dual-side-pole-standees",
+            "keyCharacteristics": [
+              "Minimalist Support: Unlike traditional bulky kiosks, these displays use one or two slender vertical poles to support the screen, creating a clean and modern aesthetic.",
+              "Back-to-Back Screens: They feature two high-definition LED or LCD panels facing opposite directions, ensuring your content is seen by people approaching from any side.",
+              "Small Floor Footprint: The pole-mounted design takes up very little floor space, making them ideal for narrow walkways or crowded retail environments.",
+              "Hidden Cable Management: Power and data cables are usually routed through the hollow interior of the support poles, maintaining a clean, wire-free appearance."
+            ],
+            "applications": [
+              "Narrow Mall Aisles: Providing high-impact advertising without blocking the path for shoppers.",
+              "Airport Transit Zones: Displaying flight updates or directional signage in busy terminals where floor space is limited.",
+              "Hotel & Corporate Corridors: Acting as a sophisticated information point that can be viewed from both ends of a hallway.",
+              "Museum & Gallery Walkways: Providing digital exhibit information in a sleek, non-intrusive format."
+            ]
+          },
+          {
+            "name": "Conventional Back-to-Back Standees",
+            "slug": "conventional-back-to-back-standees",
+            "keyCharacteristics": [
+              "Dual Screens: These units consist of two independent LED or LCD panels mounted back-to-back within a single, slim frame.",
+              "Independent Content: Each side can play the same video or display completely different content, allowing for targeted messaging in high-traffic corridors.",
+              "Shared Infrastructure: While they have two screens, they often share a single power source and a centralized media player or internal PC to simplify management.",
+              "Slim Profile: Despite having two display layers, advanced cooling and thin-panel technology keep the overall depth of the standee remarkably slim."
+            ],
+            "applications": [
+              "Shopping Mall Aisles: Placed in the center of walkways so shoppers see advertisements whether they are walking \"up\" or \"down\" the mall.",
+              "Airport Concourses: Providing flight updates or premium advertising to travelers moving toward or away from departure gates.",
+              "Exhibition Walkways: Ensuring booth branding is visible to attendees navigating busy trade show floors from any angle.",
+              "Hotel & Transit Hubs: Acting as a central information point that serves people coming from multiple entrances."
+            ]
+          }
+        ]
+      },
+  
+      {
+        "name": "Hanging Standees Services",
+        "slug": "hanging-standees-services",
+        "subcategories": [
+          {
+            "name": "Lightweight LED Mesh and Hanging Board Standees",
+            "slug": "lightweight-led-mesh-and-hanging-board-standees",
+            "keyCharacteristics": [
+              "High Transparency: These displays feature a grid-like or \"bar\" structure with significant space between LED strips, allowing 30% to 90% of light and air to pass through.",
+              "Ultra-Lightweight: Due to the mesh design, these screens are significantly lighter than solid LED panels, often weighing less than 6 kg/m², which simplifies hanging installations.",
+              "Low Wind Load: The open structure allows wind to pass through the display, making them ideal for large-scale outdoor hanging applications or building facades where wind resistance is a safety concern.",
+              "Flexible & Creative: Many mesh displays are made from soft, flexible materials that can be curved, rolled, or folded into irregular shapes for artistic installations."
+            ],
+            "applications": [
+              "Building Facades (Media Facades): Transforming entire glass exteriors into giant digital screens without blocking the view or light for people inside.",
+              "Stage & Tour Backdrops: Providing a large-scale, lightweight visual element for concerts that can be easily transported and hung from trusses.",
+              "Retail Windows: Using high-transparency mesh to display advertisements while maintaining the visibility of the store's interior.",
+              "Indoor Artistic Displays: Creating \"floating\" or holographic-like visual effects in atriums and galleries."
+            ]
+          },
+  
+          {
+            "name": "Window-Facing Hanging Displays",
+            "slug": "window-facing-hanging-displays",
+            "keyCharacteristics": [
+              "High-Brightness (Nit) Rating: Unlike standard indoor screens, these feature a brightness of 2,500 to 5,000 nits, ensuring the content remains vibrant and legible even in direct, intense sunlight.",
+              "Thermal Management: They are equipped with advanced cooling systems and heat-resistant panels to handle the high temperatures generated by sunlight hitting the glass window.",
+              "Slim & Minimalist Frame: Designed to hang from the ceiling using thin, high-strength steel cables or telescopic poles, they maintain a clean look that doesn't block the store's internal visibility.",
+              "Automatic Brightness Sensors: These displays often include light sensors that automatically dim the screen at night to save energy and reduce light pollution."
+            ],
+            "applications": [
+              "Retail Storefronts: Used for displaying high-impact seasonal promotions and brand videos to people walking on the street.",
+              "Real Estate Agencies: Showcasing properties and listings 24/7 in high-visibility office windows.",
+              "Travel Agencies: Displaying dynamic holiday deals and destination videos to grab the interest of passersby.",
+              "Banks & Financial Hubs: Providing information on current interest rates or digital services at street level."
+            ]
+          },
+  
+          {
+            "name": "Ceiling-Hung Digital Signage Standees",
+            "slug": "ceiling-hung-digital-signage-standees",
+            "keyCharacteristics": [
+              "Suspended Mounting: These units are hung using heavy-duty steel cables, telescopic poles, or specialized ceiling brackets, allowing them to \"float\" at eye level or higher.",
+              "Dual-Sided Visibility: Many hanging standees feature back-to-back screens, enabling content to be viewed by audiences approaching from either direction in a corridor or open hall.",
+              "Ultra-Slim Form Factor: To minimize weight and maintain a sleek look, these displays often use lightweight aluminum frames and high-efficiency LED/LCD panels.",
+              "High Impact: Positioned above the crowd, they are highly effective at grabbing attention from a distance, making them perfect for directional information or large-scale branding."
+            ],
+            "applications": [
+              "Airports & Transit Hubs: Providing real-time flight information, gate directions, or terminal maps in busy walkways.",
+              "Shopping Mall Atriums: Used for high-profile advertising and seasonal promotions that need to be visible from multiple floors.",
+              "Retail Store Windows: Displaying high-brightness promotional content to street traffic without blocking the store's interior floor space.",
+              "Exhibition Centers: Serving as digital booth headers or directional signs for large conventions."
+            ]
+          }
+        ]
+      },
+  
+      {
+        "name": "Standee I‑Type Display Services",
+        "slug": "standee-i-type-display-services",
+        "subcategories": [
+          {
+            "name": "Battery-Powered I-Shape Standees",
+            "slug": "battery-powered-i-shape-standees",
+            "keyCharacteristics": [
+              "Built-in High-Capacity Battery: They feature integrated Lithium-Iron Phosphate (LiFePO4) or lithium-ion batteries that typically provide 8 to 14 hours of continuous operation on a single charge.",
+              "Integrated Wheels: To make them truly mobile, most battery-powered units include heavy-duty, lockable casters at the base, allowing a single person to move the display easily.",
+              "Slim \"I-Shape\" Profile: Despite housing a large battery, they maintain a sleek, vertical \"I\" form factor, ensuring they don't take up excessive floor space in crowded areas.",
+              "Intelligent Power Management: These displays often include an on-screen battery indicator and low-power modes to extend runtime during long events."
+            ],
+            "applications": [
+              "Outdoor Events & Festivals: Providing digital signage or schedule updates in open fields or parks where running power cables is difficult.",
+              "Retail \"Pop-Up\" Shops: Placing an interactive or promotional screen in the middle of a mall aisle or temporary stall.",
+              "Event Wayfinding: Acting as a mobile \"concierge\" to guide guests during conferences or weddings in various parts of a venue.",
+              "Check-in Stations: Providing a cordless, digital kiosk for guest registration at the entrance of a building or gala."
+            ]
+          },
+  
+          {
+            "name": "Designer Standee Displays",
+            "slug": "designer-standee-displays",
+            "keyCharacteristics": [
+              "Custom Materials: These displays can be constructed using premium finishes such as brushed aluminum, real wood veneers, marble-effect composites, or high-gloss automotive-grade paints.",
+              "Unique Geometries: Rather than a simple rectangle, designer standees often feature organic curves, asymmetrical shapes, or ultra-minimalist \"floating\" screen designs.",
+              "Integrated Branding: The housing can be precision-cut or engraved with corporate logos and backlit with programmable RGB LED accents to match brand colors.",
+              "Architectural Integration: These are often commissioned by interior designers to ensure the technology feels like a part of the furniture rather than an added piece of equipment."
+            ],
+            "applications": [
+              "Luxury Flagship Stores: Used as artistic branding pieces that blend with high-end boutique interiors.",
+              "Executive Boardrooms: Serving as elegant digital presentation tools or \"welcome boards\" for high-profile clients.",
+              "Art Galleries & Showrooms: Providing digital information in a way that respects the minimalist aesthetic of the space.",
+              "Boutique Hotels: Acting as a high-tech concierge station that matches the unique decor of the lobby."
+            ]
+          },
+  
+          {
+            "name": "Full-Glass I-Shape Displays",
+            "slug": "full-glass-i-shape-displays",
+            "keyCharacteristics": [
+              "Seamless Aesthetic: The front of the display is a single sheet of tempered glass, giving it a sleek, high-end look similar to a giant smartphone. There are no visible bezels around the active screen area.",
+              "High Durability: The full-glass front is usually made of tempered or explosion-proof glass, making it resistant to scratches and impacts in high-traffic public areas.",
+              "Ultra-Slim Design: These displays leverage advanced LED or LCD backlighting to maintain a very thin profile (often less than 50mm thick), allowing them to blend elegantly into modern interiors.",
+              "Premium Visuals: The high-quality glass often includes anti-glare (AG) or anti-reflective (AR) coatings to ensure content remains clear under bright indoor lighting or near windows."
+            ],
+            "applications": [
+              "Luxury Retail: Used in high-fashion boutiques and jewelry stores to match the sophisticated interior design.",
+              "Corporate Lobbies: Acting as a high-impact branding tool or a digital directory for visitors in modern office buildings.",
+              "Museums & Galleries: Providing a minimalist way to display digital art or interactive exhibit information.",
+              "High-End Hotels: Serving as an elegant concierge station or event schedule board."
+            ]
+          }
+        ]
+      },
+  {
+        "name": "CCTV Camera Security Services",
+        "slug": "cctv-cameras",
+        "subcategories": [
+          {
+            "name": "Infrared (IR) / Night Vision Cameras",
+            "slug": "infrared-ir-night-vision-cameras",
+            "keyCharacteristics": [
+              "Built-in IR LEDs: These cameras are ringed with infrared light-emitting diodes that automatically turn on when the ambient light drops below a certain level.",
+              "Day/Night ICR Filter: They use an Infrared Cut-off Removable (ICR) filter that sits over the lens during the day to block IR light (ensuring natural colors) and slides away at night to allow the camera to \"see\" in the dark.",
+              "Black-and-White Night Footage: Most standard IR cameras produce a high-contrast black-and-white image at night, which provides better detail and clarity than a grainy color image in low light.",
+              "Range (Distance): Night vision capability is measured by distance (e.g., 30m, 50m, or 80m). Higher-end models have more powerful IR LEDs for long-range nighttime surveillance."
+            ],
+            "applications": [
+              "24/7 Home Security: Monitoring yards, driveways, and entryways throughout the night.",
+              "Warehouses & Storage: Providing clear footage in large indoor spaces where lights are turned off after hours.",
+              "Unlit Perimeters: Monitoring dark fence lines or alleyways where installing street lighting is not feasible.",
+              "Baby & Pet Monitors: Allowing parents and owners to check in on loved ones in dark rooms without waking them up with visible light."
+            ]
+          },
+          {
+            "name": "4G Solar-Powered Cameras",
+            "slug": "4g-solar-powered-cameras",
+            "keyCharacteristics": [
+              "Total Independence: These units use a solar panel to charge a high-capacity internal battery during the day and a 4G LTE SIM card to transmit data, making them perfect for locations without infrastructure.",
+              "Smart Power Management: To conserve energy, these cameras typically remain in a \"sleep mode\" and only wake up when they detect motion or when a user accesses the live feed via a smartphone app.",
+              "Ruggedized for Extreme Environments: Built with high IP66 or IP67 waterproof ratings, they are designed to withstand harsh outdoor conditions on farms, construction sites, or in the wilderness.",
+              "Two-Way Audio & AI Detection: Modern 2026 models feature advanced AI to distinguish between people and animals, reducing false alerts, and include built-in mics and speakers for real-time communication."
+            ],
+            "applications": [
+              "Construction Sites: Monitoring expensive equipment and progress in areas where permanent power and internet aren't yet installed.",
+              "Farms & Rural Properties: Overseeing livestock, gates, and remote fields that are far from the main house's Wi-Fi range.",
+              "Vacation Homes & Cabins: Providing security for seasonal properties without needing a year-round internet subscription.",
+              "Wildlife Monitoring: Used by researchers to observe animals in their natural habitats with minimal human intrusion."
+            ]
+          },
+          {
+            "name": "Wireless (Wi-Fi) Cameras",
+            "slug": "wireless-wi-fi-cameras",
+            "keyCharacteristics": [
+              "Simple Setup: They connect to your local network via Wi-Fi, eliminating the need for a video data cable (like Ethernet or Coaxial).",
+              "Power Options: While they are \"wireless\" for data, most still require a power cable. However, some models are completely wire-free, running on internal rechargeable batteries.",
+              "Remote Access: Designed for the modern user, these cameras almost always include a dedicated smartphone app for live viewing and instant motion alerts.",
+              "Flexible Placement: Because you don't have to run long video cables through walls, they are ideal for renters or for monitoring hard-to-reach areas.",
+              "Onboard Storage: Many Wi-Fi cameras feature a MicroSD card slot for local recording, though many also offer optional cloud storage subscriptions."
+            ],
+            "applications": [
+              "Smart Homes: Monitoring nurseries, living rooms, and pet areas from anywhere in the world.",
+              "Small Businesses & Retail: Providing a quick security solution for shops without the cost of professional cabling.",
+              "Front Porch & Entryways: Used as \"Video Doorbells\" or porch cameras to monitor package deliveries and visitors.",
+              "Temporary Security: Easily moved from room to room or even to a new property when you move."
+            ]
+          },
+          {
+            "name": "PTZ (Pan-Tilt-Zoom) Cameras",
+            "slug": "ptz-pan-tilt-zoom-cameras",
+            "keyCharacteristics": [
+              "Active Motion Control: They feature high-speed motors that allow the lens to Pan (rotate horizontally 360°), Tilt (move vertically up and down), and Zoom in for extreme detail.",
+              "Powerful Optical Zoom: PTZ cameras are known for high-magnification lenses (e.g., 20x, 30x, or even 40x optical zoom), allowing them to identify faces or license plates from hundreds of feet away.",
+              "Auto-Tracking & AI: Advanced 2026 models use AI to automatically detect a human or vehicle and follow their movement throughout the scene without human intervention.",
+              "Presets and Tours: Users can program \"presets\" (specific points to look at) or \"tours\" where the camera automatically cycles through multiple key locations."
+            ],
+            "applications": [
+              "Large Parking Lots & Perimeters: A single PTZ can replace several fixed cameras by constantly \"touring\" a large area.",
+              "Live Event Streaming: Widely used in houses of worship, sports arenas, and conference rooms to follow speakers or action.",
+              "City Surveillance: Mounted high on poles at major intersections to monitor traffic and public safety.",
+              "Critical Infrastructure: Monitoring sensitive sites like power plants or airports where manual control of the viewing angle is required for security."
+            ]
+          },
+          {
+            "name": "Bullet Cameras",
+            "slug": "bullet-cameras",
+            "keyCharacteristics": [
+              "Visible Deterrent: Their prominent shape makes them easy to spot, which is often enough to prevent unauthorized activity.",
+              "Long-Range Viewing: These cameras are built for distance, often featuring larger lenses and powerful infrared (IR) LEDs that can see further in the dark than most dome models.",
+              "Weatherproof & Durable: Most bullet cameras have high IP66 or IP67 ratings, making them highly resistant to rain, dust, and extreme temperatures.",
+              "Sun Shield: They often include a small \"hood\" or sun shield to protect the lens from glare and rain, ensuring clear footage in varied outdoor conditions.",
+              "Easy Installation: The multi-axis bracket makes them very simple to aim at specific targets like gates, long driveways, or building perimeters."
+            ],
+            "applications": [
+              "Perimeter Security: Monitoring long fence lines, exterior walls, and parking lots.",
+              "Driveways & Gateways: Capturing high-detail footage of approaching vehicles and visitors.",
+              "Loading Docks: Overseeing large-scale logistics operations in warehouses and commercial sites.",
+              "Public Parks & Open Spaces: Providing high-visibility security in large outdoor areas."
+            ]
+          },
+          {
+            "name": "Dome Cameras",
+            "slug": "dome-cameras",
+            "keyCharacteristics": [
+              "Discreet Design: The hemispherical shape makes it difficult for a person to tell which way the lens is actually pointing from a distance, providing a psychological deterrent.",
+              "Vandal Resistance: Many dome cameras feature \"vandal-proof\" housings (rated IK10) that can withstand physical impact, making them ideal for low-ceiling areas or public spaces.",
+              "Wide Viewing Angle: They typically use wide-angle lenses to cover large indoor areas like lobbies, retail aisles, and office spaces with a single unit.",
+              "Weatherproof (Outdoor Models): While popular indoors, many versions are rated IP66 or IP67, allowing them to be mounted on exterior soffits or entryways.",
+              "Integrated IR: Most modern domes include built-in Infrared (IR) LEDs for clear black-and-white footage in total darkness."
+            ],
+            "applications": [
+              "Retail & Malls: Preferred for their sleek look that blends into the ceiling while monitoring multiple aisles.",
+              "Hotels & Office Lobbies: Providing high-security monitoring without creating an intimidating atmosphere for guests.",
+              "Public Transport: Frequently installed in buses and trains due to their compact size and resistance to tampering.",
+              "Residential Entryways: Mounted under eaves to monitor front doors and porches discreetly."
+            ]
+          }
+        ]
+      },
+  
+      {
+        "name": "Touch-Screen Standees (Interactive) Services",
+        "slug": "touch-screen-standees-interactive-services",
+        "subcategories": [
+          {
+            "name": "Interactive Catalog Standees",
+            "slug": "interactive-catalog-standees",
+            "keyCharacteristics": [
+              "High-Resolution Touch Display: Usually featuring 4K resolution and advanced PCAP touch technology, these screens provide a smooth, smartphone-like experience for scrolling through high-resolution product imagery and videos.",
+              "Deep Content Integration: The software is designed to handle thousands of SKUs, allowing users to filter products by color, size, price, or availability in real-time.",
+              "\"Endless Aisle\" Capability: They allow customers to browse and order items that may not be physically in stock at that specific location, with options for home delivery or in-store pickup.",
+              "Multimedia Support: Beyond static images, these standees can play 360-degree product views, \"how-to\" videos, and customer reviews to help in the decision-making process."
+            ],
+            "applications": [
+              "Furniture & Home Decor Showrooms: Allowing customers to visualize different fabric options or configurations for a sofa that isn't on the floor.",
+              "Automotive Dealerships: Helping buyers \"build\" their car by selecting different paint colors, wheel designs, and interior trims.",
+              "Apparel & Fashion Flagships: Serving as a digital lookbook where customers can see how clothes look on models or check for different sizes.",
+              "Electronics Stores: Providing detailed technical specifications, comparison charts, and accessory recommendations for complex devices."
+            ]
+          },
+  
+          {
+            "name": "Point-of-Sale (POS) Standees",
+            "slug": "point-of-sale-pos-standees",
+            "keyCharacteristics": [
+              "Integrated Peripherals: These kiosks often feature built-in hardware such as receipt printers, QR/barcode scanners, and EMV credit card terminals for a complete checkout experience.",
+              "Highly Responsive Touch-Screen: Utilizing PCAP (Projected Capacitive) touch technology, they provide a smooth, smartphone-like interface that can handle high volumes of daily use.",
+              "Custom Interface: The software is typically a specialized app (like Clover or Square) tailored for quick navigation through product catalogs, menu items, and payment options.",
+              "Durable & Secure: Constructed with a heavy-duty metal chassis and tempered glass, these units are designed to withstand high-traffic retail and restaurant environments while keeping internal components secure."
+            ],
+            "applications": [
+              "Quick-Service Restaurants (QSR): Allowing customers to browse the menu, customize their order, and pay without waiting for a cashier.",
+              "Self-Checkout Lanes: Used in supermarkets and department stores to reduce wait times and labor costs.",
+              "Ticketing Hubs: Found in cinemas, transit stations, and theme parks for rapid ticket printing and pickup.",
+              "Queue Management: Acting as a \"check-in\" point in banks or medical clinics to assign service numbers to visitors."
+            ]
+          },
+  
+          {
+            "name": "Wayfinding Kiosk Standees",
+            "slug": "wayfinding-kiosk-standees",
+            "keyCharacteristics": [
+              "Interactive Touch Interface: Unlike standard advertising standees, these are equipped with highly responsive touch-screen technology (often PCAP or Infrared) to allow users to zoom, rotate, and interact with maps.",
+              "3D Map Integration: Modern systems often feature detailed 3D indoor mapping that provides \"blue dot\" navigation or step-by-step directions to specific destinations.",
+              "Accessibility Features: They frequently include features like \"ADA mode,\" which lowers the interactive interface for users in wheelchairs, and multilingual support for international visitors.",
+              "Ruggedized Build: Since they are meant for constant public interaction, they are typically built with tempered, scratch-resistant glass and a heavy-duty, stable metal chassis."
+            ],
+            "applications": [
+              "Large Shopping Malls: Helping shoppers find specific stores, restrooms, or parking areas.",
+              "Hospitals & Medical Centers: Providing patients and visitors with clear paths to different departments and consultation rooms.",
+              "Transit Hubs (Airports/Train Stations): Assisting travelers in finding gates, baggage claims, and ground transportation.",
+              "University Campuses: Helping students and guests locate specific buildings, lecture halls, or administrative offices."
+            ]
+          }
+        ]
+      }
+  
+    ]
+  }
+}
+

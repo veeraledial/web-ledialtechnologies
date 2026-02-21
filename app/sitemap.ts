@@ -3,7 +3,6 @@ import { getBaseUrl } from "@/lib/utils/seo";
 import { PRODUCT_CATEGORIES } from "@/types/product";
 import { SOLUTION_INDUSTRIES } from "@/types/solution";
 import { ALL_PROJECTS } from "@/lib/data/projects";
-import { BLOG_POSTS } from "@/lib/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getBaseUrl();
@@ -14,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/products`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/solutions`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/projects`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/support`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/distributors`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
@@ -56,19 +54,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const blogPages = BLOG_POSTS.map((p) => ({
-    url: `${baseUrl}/blog/${p.slug}`,
-    lastModified: new Date(p.date),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
   return [
     ...staticPages,
     ...aboutPages,
     ...productPages,
     ...solutionPages,
     ...projectPages,
-    ...blogPages,
   ];
 }

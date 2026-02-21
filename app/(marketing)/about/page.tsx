@@ -63,31 +63,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Quick links to other About pages */}
-      <section className="section-padding bg-[var(--neutral)]">
-        <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[var(--charcoal)]">
-            Explore More
-          </h2>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              { href: "/about/vision-mission", label: "Vision & Mission" },
-              { href: "/about/facilities", label: "Manufacturing" },
-              { href: "/about/leadership", label: "Leadership" },
-              { href: "/about/careers", label: "Careers" },
-            ].map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="block rounded-[8px] border border-[var(--border)] bg-[var(--surface)] p-6 font-medium text-[var(--charcoal)] transition-colors hover:border-[var(--brand-red)]/30 hover:text-[var(--brand-red)]"
-              >
-                {link.label} →
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

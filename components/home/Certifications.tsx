@@ -1,5 +1,6 @@
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { CLIENT_NAMES } from "@/lib/data/clients";
+import { LogoMarquee } from "@/components/home/LogoMarquee";
 
 const certifications = [
   { name: "CE", desc: "European conformity" },
@@ -8,7 +9,7 @@ const certifications = [
   { name: "RoHS", desc: "Restriction of hazardous substances" },
 ];
 
-const partners = CLIENT_NAMES.slice(0, 8);
+void CLIENT_NAMES;
 
 export function Certifications() {
   return (
@@ -44,15 +45,8 @@ export function Certifications() {
           <p className="text-center text-sm font-semibold text-[var(--muted)]">
             Trusted by leading brands
           </p>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-6">
-            {partners.map((partner) => (
-              <div
-                key={partner}
-                className="flex h-12 min-w-[8rem] items-center justify-center rounded-xl border border-[var(--border)] bg-[var(--neutral)] px-6 text-sm font-medium text-[var(--muted)]"
-              >
-                {partner}
-              </div>
-            ))}
+          <div className="mt-6 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-card)]">
+            <LogoMarquee as="div" withBorders={false} className="py-8" />
           </div>
         </div>
       </div>

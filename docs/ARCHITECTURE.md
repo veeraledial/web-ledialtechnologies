@@ -15,7 +15,7 @@
 | **Build brand credibility** | About Us, certifications, case studies, leadership |
 | **Generate leads** | Strategic enquiry forms (product, quote, contact, support) |
 | **Support distributors** | Global presence, partner portal, enquiry routing |
-| **Rank on Google** | Semantic URLs, structured data, blog, technical SEO |
+| **Rank on Google** | Semantic URLs, structured data, and technical SEO |
 
 ---
 
@@ -52,9 +52,6 @@
 /projects                   → Case studies hub
 /projects/[slug]            → Individual case study (e.g. /projects/dubai-airport-terminal-3)
 
-/blog                       → Blog listing
-/blog/[slug]                → Article (e.g. /blog/microled-vs-miniled-2025)
-
 /contact                    → Contact & enquiry hub
 /support                    → Support / technical enquiry
 /distributors               → Distributor enquiry & map
@@ -88,9 +85,7 @@ app/
 │   ├── projects/
 │   │   ├── page.tsx               # Case studies listing
 │   │   └── [slug]/page.tsx        # Case study detail
-│   └── blog/
-│       ├── page.tsx               # Blog listing
-│       └── [slug]/page.tsx        # Article
+│   └── (blog removed)
 │
 ├── (contact)/                     # Contact layout (may share header/footer)
 │   ├── contact/page.tsx
@@ -136,10 +131,7 @@ components/
 │   ├── ProjectHero.tsx
 │   ├── ProjectGallery.tsx
 │   └── ProjectSpecs.tsx
-├── blog/
-│   ├── BlogCard.tsx
-│   ├── BlogContent.tsx
-│   └── TableOfContents.tsx
+├── (blog removed)
 ├── forms/
 │   ├── EnquiryForm.tsx
 │   ├── ContactForm.tsx
@@ -156,7 +148,7 @@ lib/
 │   ├── products.ts
 │   ├── solutions.ts
 │   ├── projects.ts
-│   └── blog.ts
+│   └── (blog removed)
 ├── utils/
 │   ├── seo.ts
 │   └── slugify.ts
@@ -167,7 +159,7 @@ content/                            # MDX or CMS content (if used)
 ├── products/
 ├── solutions/
 ├── projects/
-└── blog/
+└── (blog removed)
 
 types/
 ├── product.ts
@@ -286,7 +278,7 @@ export const metadata = {
 ### Structured Data (JSON-LD)
 - **Organization** (sitewide)
 - **Product** (product pages)
-- **Article** (blog)
+- **Article** (optional content module)
 - **LocalBusiness** (contact)
 - **BreadcrumbList** (all pages)
 
@@ -305,7 +297,7 @@ export const metadata = {
 | **Contact** | Contact page | Name, Email, Subject, Message | → API → General inbox |
 | **Support** | Support page | Name, Email, Product, Issue type, Message | → API → Support team |
 | **Distributor** | Distributors page | Company, Contact, Region, Message | → API → Partnerships |
-| **Newsletter** | Footer, blog | Email | → API → Newsletter platform |
+| **Newsletter** | Footer | Email | → API → Newsletter platform |
 
 ### API Flow
 ```
@@ -395,7 +387,7 @@ Form Submit → Server Action or API Route
 - [ ] Certifications, leadership
 
 ### Phase 4 — Engagement
-- [ ] Blog listing + article pages
+- [ ] Optional content pages (if needed later)
 - [ ] Contact, support, distributors
 - [ ] Enquiry API + forms
 

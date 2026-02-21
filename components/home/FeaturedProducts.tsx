@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FEATURED_PRODUCTS } from "@/lib/data/products";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
+import { asset } from "@/lib/utils/assets";
 
 export function FeaturedProducts() {
   return (
@@ -29,7 +30,7 @@ export function FeaturedProducts() {
               <div className="relative aspect-video overflow-hidden rounded-[6px] bg-gradient-to-br from-[var(--neutral-dark)] to-[var(--border)] transition group-hover:from-[var(--brand-navy)]/10 group-hover:to-[var(--brand-red)]/10">
                 {product.images?.[0] ? (
                   <Image
-                    src={product.images[0]}
+                    src={asset(product.images[0])}
                     alt={product.name}
                     fill
                     sizes="(max-width: 1024px) 100vw, 25vw"

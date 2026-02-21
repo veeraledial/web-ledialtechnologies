@@ -2,11 +2,28 @@
 
 import { CLIENT_NAMES } from "@/lib/data/clients";
 
-export function LogoMarquee() {
+type LogoMarqueeProps = {
+  as?: "section" | "div";
+  className?: string;
+  withBorders?: boolean;
+};
+
+export function LogoMarquee({
+  as = "section",
+  className = "",
+  withBorders = true,
+}: LogoMarqueeProps) {
   const duplicated = [...CLIENT_NAMES, ...CLIENT_NAMES];
+  const Wrapper = as === "div" ? "div" : "section";
 
   return (
-    <section className="relative overflow-hidden border-y border-[var(--border)] bg-[var(--surface)] py-10">
+    <Wrapper
+      className={[
+        "relative overflow-hidden bg-[var(--surface)] py-10",
+        withBorders ? "border-y border-[var(--border)]" : "",
+        className,
+      ].join(" ")}
+    >
       <div className="absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-[var(--surface)] to-transparent pointer-events-none" />
       <div className="absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-[var(--surface)] to-transparent pointer-events-none" />
       <div className="flex animate-marquee whitespace-nowrap">
@@ -19,6 +36,6 @@ export function LogoMarquee() {
           </div>
         ))}
       </div>
-    </section>
+    </Wrapper>
   );
 }
