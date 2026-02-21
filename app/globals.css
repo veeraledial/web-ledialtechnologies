@@ -90,13 +90,13 @@ body {
 @layer components {
   /* Section spacing */
   .section-padding {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   @media (min-width: 1024px) {
     .section-padding {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
     }
   }
 
@@ -181,6 +181,11 @@ body {
 }
 .animate-marquee {
   animation: marquee 30s linear infinite;
+}
+
+/* Pause marquee when hovering cards */
+.marquee-pausable:hover .animate-marquee {
+  animation-play-state: paused;
 }
 
 /* Card hover — smooth lift and glow */
@@ -309,4 +314,20 @@ body {
 .hero-enter-from-bottom-delay-img {
   animation: hero-enter-from-bottom 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.28s forwards;
   opacity: 0;
+}
+
+/* Category hero image entrance (left → right) */
+@keyframes hero-enter-left-to-right {
+  from {
+    opacity: 0;
+    transform: translateX(-44px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+.hero-enter-left-to-right {
+  animation: hero-enter-left-to-right 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  will-change: transform, opacity;
 }

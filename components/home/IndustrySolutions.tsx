@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SOLUTION_INDUSTRIES } from "@/types/solution";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { LinkButton } from "@/components/ui/LinkButton";
 
 const icons: Record<string, string> = {
   retail: "🛒",
@@ -47,12 +48,9 @@ export function IndustrySolutions() {
         </div>
 
         <div className="mt-8 text-center">
-          <Link
-            href="/solutions"
-            className="text-sm font-semibold text-[var(--brand-red)] hover:underline"
-          >
+          <LinkButton href="/solutions" variant="outline" size="sm">
             Explore all solutions
-          </Link>
+          </LinkButton>
         </div>
       </div>
     </section>

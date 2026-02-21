@@ -10,7 +10,7 @@ export default function DistributorsPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-[var(--brand-navy)] py-16 sm:py-20">
+      <section className="bg-[var(--brand-navy)] py-10 sm:py-12 lg:py-14">
         <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Become a Distributor

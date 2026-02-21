@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { FOOTER_LINKS } from "@/lib/navigation";
+import { getFooterLinks } from "@/lib/navigation";
 import { NewsletterForm } from "@/components/forms/NewsletterForm";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const FOOTER_LINKS = getFooterLinks();
 
   return (
     <footer className="relative border-t border-[var(--color-light)]/10 bg-[var(--brand-footer)]">

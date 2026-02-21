@@ -1,7 +1,5 @@
 import Link from "next/link";
-import { PRODUCT_CATEGORIES } from "@/types/product";
-import { getProductsByCategory } from "@/lib/data/products";
-import { ProductCard } from "@/components/products/ProductCard";
+import { getServiceCategories } from "@/lib/data/services";
 import { Button } from "@/components/ui/Button";
 
 export const metadata = {
@@ -11,10 +9,12 @@ export const metadata = {
 };
 
 export default function ProductsPage() {
+  const categories = getServiceCategories();
+
   return (
     <div>
       {/* Hero */}
-      <section className="bg-[var(--brand-navy)] py-16 sm:py-20">
+      <section className="bg-[var(--brand-navy)] py-10 sm:py-12 lg:py-14">
         <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Our Services
@@ -25,44 +25,53 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Categories */}
-      {PRODUCT_CATEGORIES.map((category) => {
-        const products = getProductsByCategory(category.slug);
-        return (
-          <section
-            key={category.slug}
-            className="section-padding bg-[var(--surface)] odd:bg-[var(--neutral)]"
-          >
-            <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-              <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-                <h2 className="text-2xl font-bold text-[var(--charcoal)]">
-                  {category.label}
-                </h2>
-                <Link
-                  href={`/products/${category.slug}`}
-                  className="text-sm font-semibold text-[var(--brand-red)] hover:underline"
-                >
-                  View all →
-                </Link>
-              </div>
-              <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {products.slice(0, 3).map((product) => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
-              {products.length > 3 && (
-                <div className="mt-8">
-                  <Link href={`/products/${category.slug}`}>
-                    <Button variant="outline" size="md">
-                      View all {category.label}
-                    </Button>
-                  </Link>
-                </div>
-              )}
+      {/* Categories (from services.json) */}
+      <section className="section-padding bg-[var(--surface)]">
+        <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="section-label">Categories</p>
+              <h2 className="section-title mt-3">Explore Our Service Categories</h2>
+              <p className="section-desc mt-4 max-w-2xl">
+                Choose a category to view detailed subcategories, key characteristics, and applications.
+              </p>
             </div>
-          </section>
-        );
-      })}
+          </div>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {categories.map((cat) => (
+              <Link
+                key={cat.slug}
+                href={`/products/${cat.slug}`}
+                className="group rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-card)] transition-all hover-lift hover:border-[var(--brand-red)]/25 hover:shadow-[var(--shadow-card-hover)]"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="text-lg font-semibold text-[var(--charcoal)] group-hover:text-[var(--brand-red)] transition-colors">
+                    {cat.name}
+                  </h3>
+                  <span className="shrink-0 rounded-full bg-[var(--brand-red-soft)] px-3 py-1 text-xs font-semibold text-[var(--brand-red)]">
+                    {cat.subcategories?.length ?? 0}
+                  </span>
+                </div>
+
+                {cat.subcategories?.length ? (
+                  <p className="mt-3 text-sm text-[var(--muted)]">
+                    {cat.subcategories
+                      .slice(0, 3)
+                      .map((s) => s.name)
+                      .join(" • ")}
+                    {cat.subcategories.length > 3 ? " • …" : ""}
+                  </p>
+                ) : null}
+
+                <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-[var(--brand-red)] transition-transform group-hover:gap-2">
+                  View subcategories <span aria-hidden>→</span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="section-padding bg-[var(--brand-navy)]">

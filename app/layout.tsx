@@ -4,6 +4,7 @@ import "./globals.css";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ORGANIZATION_JSON_LD } from "@/lib/utils/seo";
 import { Analytics } from "@/components/Analytics";
+import { RouteScrollManager } from "@/components/RouteScrollManager";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${openSans.variable} antialiased`}>
         <JsonLd data={ORGANIZATION_JSON_LD} />
+        <RouteScrollManager />
         {children}
         <Analytics />
       </body>

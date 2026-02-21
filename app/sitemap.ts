@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getBaseUrl } from "@/lib/utils/seo";
-import { PRODUCT_CATEGORIES } from "@/types/product";
+import { getServiceCategories } from "@/lib/data/services";
 import { SOLUTION_INDUSTRIES } from "@/types/solution";
 import { ALL_PROJECTS } from "@/lib/data/projects";
 
@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const productPages = PRODUCT_CATEGORIES.map((cat) => ({
+  const productPages = getServiceCategories().map((cat) => ({
     url: `${baseUrl}/products/${cat.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,

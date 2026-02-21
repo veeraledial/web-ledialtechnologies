@@ -1,22 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import { MAIN_NAV } from "@/lib/navigation";
+import type { NavItem } from "@/types/nav";
 import { Button } from "@/components/ui/Button";
 
 interface MobileNavProps {
+  navItems: NavItem[];
   open: boolean;
   onClose: () => void;
 }
 
-export function MobileNav({ open, onClose }: MobileNavProps) {
+export function MobileNav({ navItems, open, onClose }: MobileNavProps) {
   if (!open) return null;
 
   return (
     <div className="border-t border-[var(--color-light)]/10 bg-[var(--brand-footer)] md:hidden">
       <nav className="mx-auto max-w-[1200px] px-4 py-4 sm:px-6">
         <ul className="space-y-1">
-          {MAIN_NAV.map((item) => (
+          {navItems.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
