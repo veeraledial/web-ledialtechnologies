@@ -9,6 +9,7 @@
           {
             "name": "Vertical A-Frame Displays",
             "slug": "vertical-a-frame-displays",
+            "description": "Vertical A-Frame Displays (also known as upright digital sandwich boards) offer a modern, high-impact alternative to traditional printed signs.",
             "keyCharacteristics": [
               "True Portrait Orientation: Unlike tilted easel designs, these screens are mounted perfectly vertical within the A-frame, providing a clean, architectural look that mimics a traditional poster.",
               "Double-Sided Options: Many vertical A-frames are designed to be double-sided, allowing you to capture the attention of audiences moving in both directions.",
@@ -26,6 +27,7 @@
           {
             "name": "Foldable A-Frame Displays",
             "slug": "foldable-a-frame-displays",
+            "description": "Foldable A-Frame Displays (also known as digital sandwich boards) are highly portable, professional-grade screens designed for ease of transport and quick deployment.",
             "keyCharacteristics": [
               "Collapsible Design: Unlike standard A-frames with a fixed tilt, foldable versions feature heavy-duty hinges and a locking stay bar that allow the two sides of the frame to fold completely flat for storage or transport.",
               "Dual-Sided Option: Many models are available as double-sided units, allowing you to catch the attention of foot traffic from both directions with a single piece of hardware.",
@@ -42,6 +44,7 @@
           {
             "name": "Tilt Digital Standees",
             "slug": "tilt-digital-standees",
+            "description": "Tilt Digital Standees (also known as slanted or easel-style digital posters) are specialized displays designed for optimal viewing by people walking nearby.",
             "keyCharacteristics": [
               "Ergonomic Viewing Angle: The screen is angled (typically between 15° and 30°) so that the content is directly in the line of sight for pedestrians, making it easier to read than a perfectly vertical screen at close range.",
               "Low Profile: They often have a lower height than standard vertical \"totem\" kiosks, making them less obtrusive in open floor plans.",
@@ -65,6 +68,7 @@
           {
             "name": "Outdoor Mobile LED Displays",
             "slug": "outdoor-mobile-led-displays",
+            "description": "Outdoor Mobile LED Displays are versatile, high-impact screens mounted on vehicles, such as trucks or trailers, allowing them to be easily moved to different locations.",
             "keyCharacteristics": [
               "Rapid Deployment: Unlike fixed installations, mobile displays are ready to operate almost immediately upon arrival, with hydraulic systems often used to lift and rotate the screen into the optimal viewing position.",
               "Self-Sustained Power: Many mobile LED trucks are equipped with their own onboard generators, allowing them to function in remote locations or areas without direct access to the power grid.",
@@ -82,6 +86,7 @@
           {
             "name": "Outdoor Perimeter/Stadium LED Boards",
             "slug": "outdoor-perimeter-stadium-led-boards",
+            "description": "Outdoor Perimeter/Stadium LED Boards (also known as pitch-side or banner displays) are long, low-profile screens primarily used around the boundaries of sports fields.",
             "keyCharacteristics": [
               "Soft Top & Mask: They feature a rubber or soft silicone top cover and flexible mask to protect athletes from injury in case of a collision.",
               "Adjustable Tilt: Many perimeter boards have an adjustable supporting stand (usually 60° to 90°) to ensure the best viewing angle for both the live audience and TV cameras.",
@@ -99,6 +104,7 @@
           {
             "name": "Outdoor Fixed Installation LED Displays",
             "slug": "outdoor-fixed-installation-led-displays",
+            "description": "Outdoor Fixed Installation LED Displays are permanent large-scale screens engineered for high visibility and durability in all weather conditions.",
             "keyCharacteristics": [
               "High Brightness: These screens feature a brightness level ranging from 5,000 to 10,000 nits. This ensures that the digital content remains clearly visible even under direct, high-intensity sunlight.",
               "Weatherproof Design: They are typically built with an IP65 or higher waterproof and dustproof rating. This allows them to operate reliably during heavy rain, high humidity, and extreme temperature fluctuations.",
@@ -116,6 +122,7 @@
           {
             "name": "Outdoor LED Billboards",
             "slug": "outdoor-led-billboards",
+            "description": "Outdoor LED Billboards (Digital Billboards) are large-format displays specifically engineered for long-range visibility and extreme weather resistance.",
             "keyCharacteristics": [
               "High Brightness: These displays typically range from 5,000 to 10,000 nits, allowing the content to remain clearly visible even under direct, high-intensity sunlight.",
               "Rugged Protection: They feature high IP ratings (typically IP65 or higher) to protect sensitive electronics against heavy rain, dust, and wind.",
@@ -139,6 +146,7 @@
           {
             "name": "Fixed Installation LED Display",
             "slug": "fixed-installation-led-display",
+            "description": "Fixed Installation LED Displays are permanent visual solutions designed for long-term use in specific venues. Unlike rental or portable displays, these are integrated directly into the building's architecture.",
             "keyCharacteristics": [
               "Permanent Integration: They are typically bolted to a wall, recessed into a surface, or mounted on a heavy-duty permanent steel structure.",
               "Seamless Video Walls: These displays are made of multiple small modules that fit together perfectly, creating a single, massive screen without any visible lines or \"bezels\" between panels.",
@@ -156,6 +164,7 @@
           {
             "name": "LED Poster Displays",
             "slug": "led-poster-displays",
+            "description": "LED Poster Displays, often called Digital LED Posters or iPosters, are slim, freestanding screens designed to replace traditional static roll-up banners.",
             "keyCharacteristics": [
               "Plug-and-Play: They are incredibly user-friendly, allowing content to be updated via USB, Wi-Fi, or HDMI without complex setup.",
               "Highly Portable: These displays are lightweight and often come with built-in wheels or a kickstand, making them easy to move around a venue.",
@@ -172,6 +181,7 @@
           {
             "name": "Flexible LED displays",
             "slug": "flexible-led-displays",
+            "description": "Flexible LED displays are a creative category of screens made from soft, pliable materials like flexible PCB (Printed Circuit Board) or rubber. This allows them to be bent, folded, or curved into complex shapes that traditional rigid panels cannot achieve.",
             "keyCharacteristics": [
               "High Flexibility: They can form concave or convex curves, cylinders, waves, and other artistic designs.",
               "Lightweight and Thin: Their specialized construction makes them much lighter and thinner than standard LED cabinets, simplifying installation on curved surfaces.",
@@ -188,6 +198,7 @@
           {
             "name": "Fine pitch and small pixel pitch LED display",
             "slug": "fine-pitch-and-small-pixel-pitch-led-display",
+            "description": "Fine pitch and small pixel pitch LED displays are characterized by their high pixel density, which allows for sharp, clear images even when viewed from a very short distance.",
             "keyCharacteristics": [
               "Small Pixel Pitch: These displays typically have a pixel pitch of less than 2.5mm (e.g., P0.9, P1.2, P1.5).",
               "High Resolution: Due to the tight spacing between LEDs, these screens can easily achieve 4K and 8K resolutions.",
@@ -211,6 +222,7 @@
           {
             "name": "Rotating Double-Sided Standees",
             "slug": "rotating-double-sided-standees",
+            "description": "Rotating Double-Sided Standees are dynamic digital displays that use a motorized base or central axle to rotate, ensuring that content is visible from all 360 degrees of a space.",
             "keyCharacteristics": [
               "360° Visibility: Unlike fixed double-sided units, the rotation allows a single piece of hardware to catch the eyes of everyone in an open area, regardless of their position.",
               "Dual-Screen Capability: They typically feature two high-definition LED or LCD panels back-to-back, often capable of showing different content on each side to double the advertising real estate.",
@@ -227,6 +239,7 @@
           {
             "name": "Dual-Side Pole Standees",
             "slug": "dual-side-pole-standees",
+            "description": "Dual-Side Pole Standees are specialized digital signs mounted on a central vertical support, designed to provide a \"floating\" look while maximizing visibility in busy areas.",
             "keyCharacteristics": [
               "Minimalist Support: Unlike traditional bulky kiosks, these displays use one or two slender vertical poles to support the screen, creating a clean and modern aesthetic.",
               "Back-to-Back Screens: They feature two high-definition LED or LCD panels facing opposite directions, ensuring your content is seen by people approaching from any side.",
@@ -243,6 +256,7 @@
           {
             "name": "Conventional Back-to-Back Standees",
             "slug": "conventional-back-to-back-standees",
+            "description": "Conventional Back-to-Back Standees are dual-sided displays designed to capture the attention of audiences approaching from two different directions simultaneously.",
             "keyCharacteristics": [
               "Dual Screens: These units consist of two independent LED or LCD panels mounted back-to-back within a single, slim frame.",
               "Independent Content: Each side can play the same video or display completely different content, allowing for targeted messaging in high-traffic corridors.",
@@ -266,6 +280,7 @@
           {
             "name": "Lightweight LED Mesh and Hanging Board Standees",
             "slug": "lightweight-led-mesh-and-hanging-board-standees",
+            "description": "Lightweight LED Mesh and Hanging Board Standees are specialized display solutions that prioritize transparency, low wind resistance, and ease of overhead installation.",
             "keyCharacteristics": [
               "High Transparency: These displays feature a grid-like or \"bar\" structure with significant space between LED strips, allowing 30% to 90% of light and air to pass through.",
               "Ultra-Lightweight: Due to the mesh design, these screens are significantly lighter than solid LED panels, often weighing less than 6 kg/m², which simplifies hanging installations.",
@@ -283,6 +298,7 @@
           {
             "name": "Window-Facing Hanging Displays",
             "slug": "window-facing-hanging-displays",
+            "description": "Window-Facing Hanging Displays are high-brightness screens specifically designed to capture the attention of outdoor foot traffic while being mounted inside a storefront.",
             "keyCharacteristics": [
               "High-Brightness (Nit) Rating: Unlike standard indoor screens, these feature a brightness of 2,500 to 5,000 nits, ensuring the content remains vibrant and legible even in direct, intense sunlight.",
               "Thermal Management: They are equipped with advanced cooling systems and heat-resistant panels to handle the high temperatures generated by sunlight hitting the glass window.",
@@ -300,6 +316,7 @@
           {
             "name": "Ceiling-Hung Digital Signage Standees",
             "slug": "ceiling-hung-digital-signage-standees",
+            "description": "Ceiling-Hung Digital Signage Standees are space-saving displays suspended from above, making them ideal for high-traffic areas where floor space is at a premium.",
             "keyCharacteristics": [
               "Suspended Mounting: These units are hung using heavy-duty steel cables, telescopic poles, or specialized ceiling brackets, allowing them to \"float\" at eye level or higher.",
               "Dual-Sided Visibility: Many hanging standees feature back-to-back screens, enabling content to be viewed by audiences approaching from either direction in a corridor or open hall.",
@@ -323,6 +340,7 @@
           {
             "name": "Battery-Powered I-Shape Standees",
             "slug": "battery-powered-i-shape-standees",
+            "description": "Battery-Powered I-Shape Standees are highly portable digital posters designed for locations where power outlets are unavailable or cables would create a tripping hazard.",
             "keyCharacteristics": [
               "Built-in High-Capacity Battery: They feature integrated Lithium-Iron Phosphate (LiFePO4) or lithium-ion batteries that typically provide 8 to 14 hours of continuous operation on a single charge.",
               "Integrated Wheels: To make them truly mobile, most battery-powered units include heavy-duty, lockable casters at the base, allowing a single person to move the display easily.",
@@ -340,6 +358,7 @@
           {
             "name": "Designer Standee Displays",
             "slug": "designer-standee-displays",
+            "description": "Designer Standee Displays are custom-built digital kiosks where the aesthetic design of the housing is as important as the screen itself. Unlike standard utility models, these are crafted to complement specific interior architectural styles.",
             "keyCharacteristics": [
               "Custom Materials: These displays can be constructed using premium finishes such as brushed aluminum, real wood veneers, marble-effect composites, or high-gloss automotive-grade paints.",
               "Unique Geometries: Rather than a simple rectangle, designer standees often feature organic curves, asymmetrical shapes, or ultra-minimalist \"floating\" screen designs.",
@@ -357,6 +376,7 @@
           {
             "name": "Full-Glass I-Shape Displays",
             "slug": "full-glass-i-shape-displays",
+            "description": "Full-Glass I-Shape Displays (often called Full-Glass Totems or Kiosks) are premium digital signs defined by a seamless, edge-to-edge glass front that covers the entire display area.",
             "keyCharacteristics": [
               "Seamless Aesthetic: The front of the display is a single sheet of tempered glass, giving it a sleek, high-end look similar to a giant smartphone. There are no visible bezels around the active screen area.",
               "High Durability: The full-glass front is usually made of tempered or explosion-proof glass, making it resistant to scratches and impacts in high-traffic public areas.",
@@ -379,6 +399,7 @@
           {
             "name": "Infrared (IR) / Night Vision Cameras",
             "slug": "infrared-ir-night-vision-cameras",
+            "description": "Infrared (IR) / Night Vision Cameras are designed to capture clear video in environments with little to no visible light. They use specialized LEDs to illuminate the scene with light that is invisible to the human eye but visible to the camera's sensor.",
             "keyCharacteristics": [
               "Built-in IR LEDs: These cameras are ringed with infrared light-emitting diodes that automatically turn on when the ambient light drops below a certain level.",
               "Day/Night ICR Filter: They use an Infrared Cut-off Removable (ICR) filter that sits over the lens during the day to block IR light (ensuring natural colors) and slides away at night to allow the camera to \"see\" in the dark.",
@@ -395,6 +416,7 @@
           {
             "name": "4G Solar-Powered Cameras",
             "slug": "4g-solar-powered-cameras",
+            "description": "4G Solar-Powered Cameras are the ultimate solution for remote surveillance. They are completely self-sufficient, requiring neither a power outlet nor a Wi-Fi connection to operate.",
             "keyCharacteristics": [
               "Total Independence: These units use a solar panel to charge a high-capacity internal battery during the day and a 4G LTE SIM card to transmit data, making them perfect for locations without infrastructure.",
               "Smart Power Management: To conserve energy, these cameras typically remain in a \"sleep mode\" and only wake up when they detect motion or when a user accesses the live feed via a smartphone app.",
@@ -411,6 +433,7 @@
           {
             "name": "Wireless (Wi-Fi) Cameras",
             "slug": "wireless-wi-fi-cameras",
+            "description": "Wireless (Wi-Fi) Cameras are popular for both home and business security due to their ease of installation and flexible placement.",
             "keyCharacteristics": [
               "Simple Setup: They connect to your local network via Wi-Fi, eliminating the need for a video data cable (like Ethernet or Coaxial).",
               "Power Options: While they are \"wireless\" for data, most still require a power cable. However, some models are completely wire-free, running on internal rechargeable batteries.",
@@ -428,6 +451,7 @@
           {
             "name": "PTZ (Pan-Tilt-Zoom) Cameras",
             "slug": "ptz-pan-tilt-zoom-cameras",
+            "description": "PTZ (Pan-Tilt-Zoom) Cameras are heavy-duty, motorized surveillance units designed for active monitoring. Unlike the fixed bullet or dome cameras discussed earlier, PTZ cameras can be moved remotely to track targets across a wide area.",
             "keyCharacteristics": [
               "Active Motion Control: They feature high-speed motors that allow the lens to Pan (rotate horizontally 360°), Tilt (move vertically up and down), and Zoom in for extreme detail.",
               "Powerful Optical Zoom: PTZ cameras are known for high-magnification lenses (e.g., 20x, 30x, or even 40x optical zoom), allowing them to identify faces or license plates from hundreds of feet away.",
@@ -444,6 +468,7 @@
           {
             "name": "Bullet Cameras",
             "slug": "bullet-cameras",
+            "description": "Bullet Cameras are iconic, cylindrical security cameras designed to act as a visible deterrent. They are typically larger and more obvious than dome cameras, signaling to potential intruders that an area is under surveillance.",
             "keyCharacteristics": [
               "Visible Deterrent: Their prominent shape makes them easy to spot, which is often enough to prevent unauthorized activity.",
               "Long-Range Viewing: These cameras are built for distance, often featuring larger lenses and powerful infrared (IR) LEDs that can see further in the dark than most dome models.",
@@ -461,6 +486,7 @@
           {
             "name": "Dome Cameras",
             "slug": "dome-cameras",
+            "description": "Dome Cameras are one of the most common types of security cameras, named for their circular, dome-shaped housing. They are designed to be unobtrusive and difficult for potential intruders to tamper with.",
             "keyCharacteristics": [
               "Discreet Design: The hemispherical shape makes it difficult for a person to tell which way the lens is actually pointing from a distance, providing a psychological deterrent.",
               "Vandal Resistance: Many dome cameras feature \"vandal-proof\" housings (rated IK10) that can withstand physical impact, making them ideal for low-ceiling areas or public spaces.",
@@ -485,6 +511,7 @@
           {
             "name": "Interactive Catalog Standees",
             "slug": "interactive-catalog-standees",
+            "description": "Interactive Catalog Standees (also known as Digital Product Browsers) are specialized kiosks that allow customers to explore a brand's entire product line through a high-definition touch interface.",
             "keyCharacteristics": [
               "High-Resolution Touch Display: Usually featuring 4K resolution and advanced PCAP touch technology, these screens provide a smooth, smartphone-like experience for scrolling through high-resolution product imagery and videos.",
               "Deep Content Integration: The software is designed to handle thousands of SKUs, allowing users to filter products by color, size, price, or availability in real-time.",
@@ -502,6 +529,7 @@
           {
             "name": "Point-of-Sale (POS) Standees",
             "slug": "point-of-sale-pos-standees",
+            "description": "Point-of-Sale (POS) Standees (also known as Self-Service Kiosks or Ordering Stations) are interactive displays designed to automate transactions and improve customer flow.",
             "keyCharacteristics": [
               "Integrated Peripherals: These kiosks often feature built-in hardware such as receipt printers, QR/barcode scanners, and EMV credit card terminals for a complete checkout experience.",
               "Highly Responsive Touch-Screen: Utilizing PCAP (Projected Capacitive) touch technology, they provide a smooth, smartphone-like interface that can handle high volumes of daily use.",
@@ -519,6 +547,7 @@
           {
             "name": "Wayfinding Kiosk Standees",
             "slug": "wayfinding-kiosk-standees",
+            "description": "Wayfinding Kiosk Standees (often called Interactive Wayfinders) are specialized digital touch-screens designed to help visitors navigate complex environments like malls, airports, or hospitals.",
             "keyCharacteristics": [
               "Interactive Touch Interface: Unlike standard advertising standees, these are equipped with highly responsive touch-screen technology (often PCAP or Infrared) to allow users to zoom, rotate, and interact with maps.",
               "3D Map Integration: Modern systems often feature detailed 3D indoor mapping that provides \"blue dot\" navigation or step-by-step directions to specific destinations.",
