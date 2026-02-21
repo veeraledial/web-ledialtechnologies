@@ -29,12 +29,11 @@ export const MAIN_NAV: NavItem[] = [
     label: "Products",
     href: "/products",
     children: [
-      { label: "Indoor LED Displays", href: "/products/indoor-led-displays" },
-      { label: "Outdoor LED Displays", href: "/products/outdoor-led-displays" },
-      { label: "Rental LED Displays", href: "/products/rental-led-displays" },
-      { label: "Transparent LED", href: "/products/transparent-led" },
-      { label: "All-in-One LED Displays", href: "/products/all-in-one-led-displays" },
-      { label: "LED Controllers", href: "/products/led-controllers" },
+      { label: "Indoor LED Displays Service", href: "/products/indoor-led-displays" },
+      { label: "Outdoor LED Display Service", href: "/products/outdoor-led-displays" },
+      { label: "Standee A-Type Display Service", href: "/products/standee-a-type-displays" },
+      { label: "Standee I-Type Display Service", href: "/products/standee-i-type-displays" },
+      { label: "CCTV Camera Security Services", href: "/products/cctv-camera-security" },
     ],
   },
   {

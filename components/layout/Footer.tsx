@@ -6,33 +6,33 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-white/10 bg-[#0a162b]">
-      <div className="mx-auto max-w-[1200px] px-4 pt-12 pb-6 sm:px-6 lg:px-8 lg:pt-16 lg:pb-8">
-        <div className="grid gap-8 lg:grid-cols-4">
+    <footer className="relative border-t border-[var(--color-light)]/10 bg-[var(--brand-footer)]">
+      <div className="relative mx-auto max-w-[1200px] px-4 pt-14 pb-8 sm:px-6 lg:px-8 lg:pt-20 lg:pb-10">
+        <div className="grid gap-10 lg:grid-cols-4 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block">
-              <span className="text-xl font-bold tracking-tight text-white">
+            <Link href="/" className="inline-block transition opacity-90 hover:opacity-100">
+              <span className="text-xl font-bold tracking-tight text-[var(--color-light)]">
                 LaDial
               </span>
-              <span className="text-sm text-white/80"> Technologies</span>
+              <span className="text-sm font-medium text-[var(--color-light)]/80"> Technologies</span>
             </Link>
-            <p className="mt-3 text-sm text-white/70">
-              Leading manufacturer of professional LED display solutions for retail, broadcast, control rooms, and more.
+            <p className="mt-4 text-sm leading-relaxed text-[var(--color-light)]/75 max-w-xs">
+              Professional services for indoor/outdoor LED displays, digital standees, and CCTV camera security—delivered with installation and support.
             </p>
           </div>
 
           {/* Products */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="section-label text-[var(--color-light)]/90">
               Products
             </h3>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-5 space-y-3">
               {FOOTER_LINKS.products.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/70 hover:text-[var(--brand-red)] transition-colors"
+                    className="text-sm text-[var(--color-light)]/75 transition-colors hover:text-[var(--color-accent)]"
                   >
                     {link.label}
                   </Link>
@@ -43,15 +43,15 @@ export function Footer() {
 
           {/* Solutions */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="section-label text-[var(--color-light)]/90">
               Solutions
             </h3>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-5 space-y-3">
               {FOOTER_LINKS.solutions.slice(0, 4).map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/70 hover:text-[var(--brand-red)] transition-colors"
+                    className="text-sm text-[var(--color-light)]/75 transition-colors hover:text-[var(--color-accent)]"
                   >
                     {link.label}
                   </Link>
@@ -60,7 +60,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/solutions"
-                  className="text-sm text-[var(--brand-red)] hover:underline font-medium"
+                  className="text-sm font-semibold text-[var(--color-accent)] transition-colors hover:text-[var(--color-accent-hover)]"
                 >
                   View all →
                 </Link>
@@ -70,35 +70,32 @@ export function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="section-label text-[var(--color-light)]/90">
               Stay Updated
             </h3>
-            <p className="mt-4 text-sm text-white/70">
+            <p className="mt-5 text-sm text-[var(--color-light)]/75">
               Get industry insights and product updates.
             </p>
             <NewsletterForm />
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 pb-2 sm:flex-row">
-          <div className="flex flex-wrap justify-center gap-6 text-sm">
+        <div className="mt-14 flex flex-col items-center justify-between gap-6 border-t border-[var(--color-light)]/10 pt-8 sm:flex-row">
+          <div className="flex flex-wrap justify-center gap-8 text-sm">
             {FOOTER_LINKS.legal.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white/70 hover:text-[var(--brand-red)] transition-colors"
+                className="text-[var(--color-light)]/65 transition-colors hover:text-[var(--color-accent)]"
               >
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              className="text-white/70 hover:text-[var(--brand-red)] transition-colors"
-            >
+            <Link href="/contact" className="text-[var(--color-light)]/65 transition-colors hover:text-[var(--color-accent)]">
               Contact
             </Link>
           </div>
-          <p className="text-sm text-white/70">
+          <p className="text-sm text-[var(--color-light)]/55">
             © {currentYear} LaDial Technologies. All rights reserved.
           </p>
         </div>

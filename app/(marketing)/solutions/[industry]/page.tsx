@@ -15,6 +15,10 @@ type PageProps = {
 
 const VALID_INDUSTRIES = SOLUTION_INDUSTRIES.map((i) => i.slug);
 
+function isValidIndustry(value: string): value is SolutionIndustry {
+  return VALID_INDUSTRIES.includes(value as SolutionIndustry);
+}
+
 export async function generateMetadata({ params }: PageProps) {
   const { industry } = await params;
   const solution = getSolutionByIndustry(industry as SolutionIndustry);
@@ -28,11 +32,11 @@ export async function generateMetadata({ params }: PageProps) {
 export default async function SolutionIndustryPage({ params }: PageProps) {
   const { industry } = await params;
 
-  if (!VALID_INDUSTRIES.includes(industry)) {
+  if (!isValidIndustry(industry)) {
     notFound();
   }
 
-  const solution = getSolutionByIndustry(industry as SolutionIndustry);
+  const solution = getSolutionByIndustry(industry);
   if (!solution) notFound();
 
   const relatedProjects = getProjectsByIndustry(industry);

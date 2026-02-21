@@ -1,10 +1,9 @@
 export type ProductCategory =
   | "indoor-led-displays"
   | "outdoor-led-displays"
-  | "rental-led-displays"
-  | "transparent-led"
-  | "all-in-one-led-displays"
-  | "led-controllers";
+  | "standee-a-type-displays"
+  | "standee-i-type-displays"
+  | "cctv-camera-security";
 
 export interface ProductSpecification {
   label: string;
@@ -31,10 +30,9 @@ export interface Product {
 }
 
 export const PRODUCT_CATEGORIES: { slug: ProductCategory; label: string }[] = [
-  { slug: "indoor-led-displays", label: "Indoor LED Displays" },
-  { slug: "outdoor-led-displays", label: "Outdoor LED Displays" },
-  { slug: "rental-led-displays", label: "Rental LED Displays" },
-  { slug: "transparent-led", label: "Transparent LED" },
-  { slug: "all-in-one-led-displays", label: "All-in-One LED Displays" },
-  { slug: "led-controllers", label: "LED Controllers" },
+  { slug: "indoor-led-displays", label: "Indoor LED Displays Service" },
+  { slug: "outdoor-led-displays", label: "Outdoor LED Display Service" },
+  { slug: "standee-a-type-displays", label: "Standee A-Type Display Service" },
+  { slug: "standee-i-type-displays", label: "Standee I-Type Display Service" },
+  { slug: "cctv-camera-security", label: "CCTV Camera Security Services" },
 ];

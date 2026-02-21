@@ -16,23 +16,19 @@ export function Certifications() {
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="fade-up">
           <div className="text-center">
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-[var(--brand-red)]">
-              Certifications & Partners
-            </h2>
-          <h3 className="mt-4 text-3xl font-bold tracking-tight text-[var(--charcoal)] sm:text-4xl">
-            Globally Recognized Standards
-          </h3>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-[var(--muted)]">
-            Our products meet international quality and safety certifications. We work with trusted distributors worldwide.
-          </p>
+            <p className="section-label">Certifications & Partners</p>
+            <h2 className="section-title mt-3">Globally Recognized Standards</h2>
+            <p className="section-desc mx-auto mt-4 max-w-2xl">
+              Our products meet international quality and safety certifications. We work with trusted distributors worldwide.
+            </p>
           </div>
         </ScrollReveal>
 
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-12">
+        <div className="mt-14 flex flex-wrap items-center justify-center gap-6">
           {certifications.map((cert) => (
             <div
               key={cert.name}
-              className="flex flex-col items-center rounded-[8px] border border-[var(--border)] bg-[var(--neutral)] px-8 py-6"
+              className="flex flex-col items-center rounded-2xl border border-[var(--border)] bg-[var(--card)] px-8 py-6 shadow-[var(--shadow-card)] transition hover:shadow-[var(--shadow-card-hover)]"
             >
               <span className="text-2xl font-bold text-[var(--brand-red)]">
                 {cert.name}
@@ -45,14 +41,14 @@ export function Certifications() {
         </div>
 
         <div className="mt-16">
-          <p className="text-center text-sm font-medium text-[var(--muted)]">
+          <p className="text-center text-sm font-semibold text-[var(--muted)]">
             Trusted by leading brands
           </p>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-8 opacity-60">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-6">
             {partners.map((partner) => (
               <div
                 key={partner}
-                className="flex h-12 w-32 items-center justify-center rounded-[6px] bg-[var(--neutral)] text-sm text-[var(--muted)]"
+                className="flex h-12 min-w-[8rem] items-center justify-center rounded-xl border border-[var(--border)] bg-[var(--neutral)] px-6 text-sm font-medium text-[var(--muted)]"
               >
                 {partner}
               </div>

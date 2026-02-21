@@ -97,12 +97,12 @@ export const ALL_PROJECTS: Project[] = [
     slug: "university-auditorium",
     clientName: "Leading University",
     location: "Australia",
-    productInstalled: "Indoor P3.9 All-in-One",
+    productInstalled: "Indoor LED Display Service",
     screenSize: "32m²",
     challenge:
       "University auditorium required a large-format display for lectures, events, and virtual conferences with easy operation by non-technical staff.",
     result:
-      "All-in-one LED system with integrated media player and simple remote control. Supports HDMI, USB, and network streaming. Used daily for lectures and special events.",
+      "Indoor LED display installation with a simplified content workflow and basic staff training. Supports HDMI input and scheduled playback for daily lectures and special events.",
     images: ["/images/projects/education.jpg"],
     date: "2024",
     industry: "education",

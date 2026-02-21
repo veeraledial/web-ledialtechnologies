@@ -7,21 +7,21 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variants = {
   primary:
-    "bg-[var(--brand-red)] text-white hover:bg-[var(--brand-red-hover)] border-transparent shadow-sm hover:shadow-md hover:shadow-[var(--brand-red)]/20 transition-all",
+    "bg-[var(--color-accent)] text-[var(--color-dark)] hover:bg-[var(--color-accent-hover)] border-0 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-glow-red)] active:scale-[0.98] transition-all duration-200",
   secondary:
-    "bg-[var(--brand-navy)] text-white hover:bg-[var(--brand-navy-light)] border-transparent",
+    "bg-[var(--color-dark)] text-[var(--color-light)] hover:bg-[var(--brand-navy-light)] border-0 shadow-[var(--shadow-sm)] active:scale-[0.98] transition-all duration-200",
   outline:
-    "bg-transparent border-2 border-[var(--brand-navy)] text-[var(--brand-navy)] hover:bg-[var(--brand-navy)] hover:text-white transition-colors",
+    "bg-transparent border-2 border-[var(--color-dark)] text-[var(--color-dark)] hover:bg-[var(--color-dark)] hover:text-[var(--color-light)] active:scale-[0.98] transition-all duration-200",
   "outline-white":
-    "bg-transparent border-2 border-white text-white hover:bg-[#e0e1dd] hover:text-[var(--brand-navy)] transition-colors",
+    "bg-transparent border-2 border-[var(--color-light)] text-[var(--color-light)] hover:bg-[var(--color-light)] hover:text-[var(--color-dark)] active:scale-[0.98] transition-all duration-200",
   ghost:
-    "bg-transparent text-foreground hover:bg-[var(--neutral-dark)] border-transparent",
+    "bg-transparent text-[var(--color-dark)] hover:bg-[var(--neutral-dark)] border-0 transition-colors duration-200",
 };
 
 const sizes = {
-  sm: "px-4 py-2 text-sm uppercase tracking-wider font-semibold",
-  md: "px-6 py-3 text-base uppercase tracking-wider font-semibold",
-  lg: "px-8 py-4 text-lg uppercase tracking-wider font-semibold",
+  sm: "px-5 py-2.5 text-sm font-semibold tracking-wide rounded-xl",
+  md: "px-6 py-3 text-base font-semibold tracking-wide rounded-xl",
+  lg: "px-8 py-4 text-base font-semibold tracking-wide rounded-xl",
 };
 
 export function Button({
@@ -33,7 +33,7 @@ export function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`inline-flex items-center justify-center rounded-[6px] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--brand-red)] focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ${variants[variant]} ${sizes[size]} ${className}`}
+      className={`inline-flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ${variants[variant]} ${sizes[size]} ${className}`}
       {...props}
     >
       {children}

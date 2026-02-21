@@ -35,10 +35,9 @@
 /products                   → Products hub (all categories)
 /products/indoor-led-displays
 /products/outdoor-led-displays
-/products/rental-led-displays
-/products/transparent-led
-/products/all-in-one-led-displays
-/products/led-controllers
+/products/standee-a-type-displays
+/products/standee-i-type-displays
+/products/cctv-camera-security
 
 /solutions                  → Solutions hub (all industries)
 /solutions/retail
@@ -197,7 +196,7 @@ public/
 interface Product {
   id: string;
   slug: string;
-  category: 'indoor' | 'outdoor' | 'rental' | 'transparent' | 'all-in-one' | 'controllers';
+  category: 'indoor-led-displays' | 'outdoor-led-displays' | 'standee-a-type-displays' | 'standee-i-type-displays' | 'cctv-camera-security';
   name: string;
   tagline: string;
   overview: string;

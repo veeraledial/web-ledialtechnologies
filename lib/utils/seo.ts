@@ -13,7 +13,7 @@ export const ORGANIZATION_JSON_LD = {
   "@type": "Organization",
   name: "LaDial Technologies",
   url: BASE_URL,
-  logo: `${BASE_URL}/images/logo.png`,
+  logo: `${BASE_URL}/images/logo/logo.png`,
   description:
     "Leading manufacturer of professional LED displays for retail, broadcast, control rooms, and more.",
   foundingDate: "2012",
@@ -69,7 +69,7 @@ export function getArticleJsonLd(article: {
       name: "LaDial Technologies",
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/images/logo.png`,
+        url: `${BASE_URL}/images/logo/logo.png`,
       },
     },
   };

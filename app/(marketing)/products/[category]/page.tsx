@@ -20,28 +20,35 @@ type PageProps = {
 
 const VALID_CATEGORIES = PRODUCT_CATEGORIES.map((c) => c.slug);
 
+function isValidCategory(value: string): value is ProductCategory {
+  return VALID_CATEGORIES.includes(value as ProductCategory);
+}
+
 export async function generateMetadata({ params }: PageProps) {
   const { category } = await params;
   const cat = getCategoryBySlug(category as ProductCategory);
   if (!cat) return { title: "Product" };
   return {
     title: cat.label,
-    description: `Explore our ${cat.label}. Professional LED display solutions from LaDial Technologies.`,
+    description: `Explore our ${cat.label}. LED displays, digital standees, and security solutions from LaDial Technologies.`,
   };
 }
 
 export default async function ProductCategoryPage({ params }: PageProps) {
   const { category } = await params;
 
-  if (!VALID_CATEGORIES.includes(category)) {
+  if (!isValidCategory(category)) {
     notFound();
   }
 
-  const products = getProductsByCategory(category as ProductCategory);
-  const categoryInfo = getCategoryBySlug(category as ProductCategory)!;
+  const products = getProductsByCategory(category);
+  const categoryInfo = getCategoryBySlug(category)!;
 
   // Primary product for the category (first one)
   const primaryProduct = products[0];
+  if (!primaryProduct) {
+    notFound();
+  }
   const productUrl = getAbsoluteUrl(`/products/${category}`);
   const productJsonLd = getProductJsonLd({
     name: primaryProduct.name,
@@ -58,7 +65,7 @@ export default async function ProductCategoryPage({ params }: PageProps) {
   return (
     <div>
       <JsonLd data={[productJsonLd, breadcrumbJsonLd]} />
-      <ProductHero product={primaryProduct} />
+      <ProductHero product={primaryProduct} categoryLabel={categoryInfo.label} />
 
       {/* Overview */}
       <section className="section-padding bg-[var(--surface)]">

@@ -80,11 +80,11 @@ export const SOLUTIONS: Solution[] = [
     problem:
       "Events demand flexible, high-impact displays that can be deployed quickly, shaped to fit unique spaces, and deliver immersive visuals for audiences.",
     solution:
-      "Our rental LED and flexible configurations are perfect for concerts, conferences, exhibitions, and live events. Quick setup, curved options, and stunning visuals that captivate audiences.",
+      "Our indoor and outdoor LED display services support concerts, conferences, exhibitions, and live events. From planning to installation and commissioning, we deliver high-impact visuals that captivate audiences.",
     caseStudyIds: [],
     images: ["/images/solutions/events.jpg"],
     metaTitle: "Events & Entertainment LED | LaDial Technologies",
-    metaDescription: "Rental LED displays for events and entertainment.",
+    metaDescription: "LED display services for events and entertainment.",
   },
   {
     id: "7",
@@ -94,7 +94,7 @@ export const SOLUTIONS: Solution[] = [
     problem:
       "Schools and universities need large-format displays for auditoriums, lecture halls, and campus signage that are reliable, easy to use, and engaging for students.",
     solution:
-      "All-in-one and fine-pitch LED displays for educational environments. Enhance learning with large-format visuals, campus wayfinding, and event displays. Built for durability and ease of use.",
+      "Fine‑pitch indoor LED displays and digital standee solutions for educational environments. Enhance learning with large-format visuals, campus wayfinding, and event communication—delivered with installation and support.",
     caseStudyIds: [],
     images: ["/images/solutions/education.jpg"],
     metaTitle: "Education LED Displays | LaDial Technologies",

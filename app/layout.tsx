@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ORGANIZATION_JSON_LD } from "@/lib/utils/seo";
 import { Analytics } from "@/components/Analytics";
 
-const syne = Syne({
-  variable: "--font-syne",
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | LaDial Technologies",
   },
   description:
-    "Leading manufacturer of professional LED displays for retail, broadcast, control rooms, and more. Indoor, outdoor, rental, and transparent LED solutions.",
+    "Professional services for indoor/outdoor LED displays, digital standees (A-type & I-type), and CCTV camera security—delivered with installation and support.",
   openGraph: {
     type: "website",
   },
@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${syne.variable} antialiased`}>
+      <body className={`${openSans.variable} antialiased`}>
         <JsonLd data={ORGANIZATION_JSON_LD} />
         {children}
         <Analytics />

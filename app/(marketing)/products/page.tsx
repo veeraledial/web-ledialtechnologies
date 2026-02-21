@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 export const metadata = {
   title: "Products",
   description:
-    "Professional LED displays: indoor, outdoor, rental, transparent, all-in-one, and controllers. Find the right solution for your application.",
+    "Explore our services: indoor LED displays, outdoor LED displays, digital standees (A-type & I-type), and CCTV camera security services.",
 };
 
 export default function ProductsPage() {
@@ -17,10 +17,10 @@ export default function ProductsPage() {
       <section className="bg-[var(--brand-navy)] py-16 sm:py-20">
         <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Our Products
+            Our Services
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-white/80">
-            Professional LED display solutions for every application. From fine-pitch indoor displays to rugged outdoor billboards.
+            From indoor & outdoor LED display services to digital standees and CCTV security—built for reliable, real-world deployments.
           </p>
         </div>
       </section>
@@ -71,7 +71,7 @@ export default function ProductsPage() {
             Need Help Choosing?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-white/80">
-            Our team can help you find the perfect LED display for your project.
+            Our team can help you choose the right LED display, digital standee, or CCTV setup for your project.
           </p>
           <Link href="/contact" className="mt-8 inline-block">
             <Button variant="primary" size="lg">

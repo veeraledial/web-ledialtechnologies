@@ -48,30 +48,29 @@ export function WhyChooseUs() {
   return (
     <section className="section-padding bg-[var(--neutral)]">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-[var(--brand-red)]">
-            Why Choose Us
-          </h2>
-          <h3 className="mt-4 text-3xl font-bold tracking-tight text-[var(--charcoal)] sm:text-4xl">
-            Trusted by Industry Leaders
-          </h3>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-[var(--muted)]">
-            What sets LaDial apart in the competitive LED display market.
-          </p>
+        <ScrollReveal animation="fade-up">
+          <div className="text-center">
+            <p className="section-label">Why Choose Us</p>
+            <h2 className="section-title mt-3">Trusted by Industry Leaders</h2>
+            <p className="section-desc mx-auto mt-4 max-w-2xl">
+              What sets LaDial apart across LED displays, digital standees, and security services.
+            </p>
           </div>
         </ScrollReveal>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {usps.map((usp, i) => (
             <ScrollReveal key={usp.title} animation="fade-up" delay={i * 80}>
-              <div
-                className="rounded-[8px] border border-[var(--border)] bg-[var(--surface)] p-6 transition-all hover-lift hover:border-[var(--brand-red)]/30"
-              >
-              <div className="text-[var(--brand-red)]">{usp.icon}</div>
-              <h4 className="mt-4 font-semibold text-[var(--charcoal)]">
-                {usp.title}
-              </h4>
-              <p className="mt-2 text-[var(--muted)]">{usp.description}</p>
+              <div className="card-elevated rounded-2xl p-6">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--brand-red-soft)] text-[var(--brand-red)] [&_svg]:h-6 [&_svg]:w-6">
+                  {usp.icon}
+                </div>
+                <h4 className="mt-5 text-lg font-semibold text-[var(--charcoal)]">
+                  {usp.title}
+                </h4>
+                <p className="mt-2 text-[var(--muted)] leading-relaxed">
+                  {usp.description}
+                </p>
               </div>
             </ScrollReveal>
           ))}

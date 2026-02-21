@@ -1,30 +1,57 @@
 @import "tailwindcss";
 
-/* LaDial Brand Colors - Premium Navy & Red Palette */
+/* LaDial — Theme (logo-inspired): Navy + Red + clean neutrals */
 :root {
-  /* Primary Navy - Header, Hero */
-  --brand-navy: #0b1e3c;
-  --brand-navy-secondary: #142b5f;
-  --brand-navy-light: #142b5f;
-  /* Footer - darker than header */
-  --brand-footer: #0a162b;
-  --background: #f4f6fa;
-  /* Accent Red */
-  --brand-red: #c4161c;
-  --brand-red-hover: #a10f14;
-  /* Backgrounds - alternate sections */
-  --neutral: #f4f6fa;
-  --neutral-dark: #e8ecf4;
-  /* Text */
-  --charcoal: #0b1e3c;
-  --foreground: #0b1e3c;
-  --muted: #6b7280;
-  --muted-foreground: #6b7280;
-  --accent: #c4161c;
-  --accent-hover: #a10f14;
-  --border: #e5e7eb;
-  --card: #e0e1dd;
-  --surface: #e0e1dd;
+  /* Brand palette */
+  --color-light: #f8fafc; /* near-white */
+  --color-dark: #0b1f33; /* deep navy */
+  --accent: #d11f2e; /* brand red */
+  --accent-hover: #b51a27;
+
+  /* RGB helpers (for alpha / gradients) */
+  --light-rgb: 248 250 252;
+  --dark-rgb: 11 31 51;
+  --accent-rgb: 209 31 46;
+
+  /* Convenience aliases */
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+
+  /* Semantic */
+  --background: var(--color-light);
+  --surface: #ffffff;
+  --card: #ffffff;
+  --neutral: #f1f5f9;
+  --neutral-dark: rgb(var(--dark-rgb) / 0.08);
+  --foreground: var(--color-dark);
+  --charcoal: var(--color-dark);
+  --muted: var(--color-dark);
+  --muted-foreground: var(--color-dark);
+  --muted-opacity: 0.78;
+  --border: rgb(var(--dark-rgb) / 0.14);
+  --border-strong: var(--color-accent);
+  --brand-footer: var(--color-dark);
+  --brand-navy: var(--color-dark);
+  --brand-navy-light: #14334f;
+  --brand-red: var(--color-accent);
+  --brand-red-hover: var(--color-accent-hover);
+  --brand-red-soft: rgb(var(--accent-rgb) / 0.14);
+
+  /* Design tokens */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  --shadow-sm: 0 1px 3px rgb(var(--dark-rgb) / 0.08);
+  --shadow-card: 0 6px 16px rgb(var(--dark-rgb) / 0.08);
+  --shadow-card-hover: 0 16px 34px rgb(var(--dark-rgb) / 0.14);
+  --shadow-glow-red: 0 0 0 1px rgb(var(--accent-rgb) / 0.28), 0 10px 26px rgb(var(--accent-rgb) / 0.14);
+  --shadow-glow-red-hover: 0 0 0 1px rgb(var(--accent-rgb) / 0.42), 0 14px 34px rgb(var(--accent-rgb) / 0.18);
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 350ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @theme inline {
@@ -40,7 +67,7 @@
   --color-border: var(--border);
   --color-card: var(--card);
   --color-surface: var(--surface);
-  --font-sans: var(--font-syne), system-ui, sans-serif;
+  --font-sans: var(--font-open-sans), "Open Sans", Arial, sans-serif;
 }
 
 * {
@@ -56,17 +83,66 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Section spacing - 80px top & bottom */
-.section-padding {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
+@layer components {
+  /* Section spacing */
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
 
-/* Max container 1200px */
-.max-brand-width {
-  max-width: 1200px;
+  /* Section headings — high contrast */
+  .section-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+  .section-title {
+    font-size: clamp(1.875rem, 4vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: var(--color-dark);
+  }
+  .section-desc {
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--color-dark);
+    opacity: var(--muted-opacity);
+  }
+
+  /* Cards — elevated with soft shadow and radius */
+  .card-elevated {
+    background: var(--card);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-base);
+  }
+  .card-elevated:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: var(--color-accent);
+  }
+  .card-elevated:focus-within {
+    box-shadow: var(--shadow-glow-red);
+  }
+
+  /* Max container 1200px */
+  .max-brand-width {
+    max-width: 1200px;
+  }
 }
 
 /* Scroll reveal animations */
@@ -107,22 +183,130 @@ body {
   animation: marquee 30s linear infinite;
 }
 
-/* Card hover lift */
+/* Card hover — smooth lift and glow */
 .hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-base);
 }
 .hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px -12px rgba(11, 30, 60, 0.15);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-hover);
 }
 
-/* Hero: navy gradient 135deg + subtle grid */
+/* Link hover — subtle underline slide */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width var(--transition-base);
+}
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Focus visible — accessible ring */
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Muted text — dark color at reduced opacity for readability on light bg */
+.text-muted {
+  color: var(--color-dark);
+  opacity: 0.82;
+}
+
+/* Hero: palette dark */
 .hero-dark {
+  background-color: var(--color-dark);
+  background-image: 
+    linear-gradient(rgba(240, 240, 240, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(240, 240, 240, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px, 48px 48px;
+  background-position: 0 0, 0 0;
+}
+
+/* Hero full-bleed with background image + red overlay */
+.hero-full-bg {
   background-color: #0b1e3c;
   background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(135deg, #0b1e3c 0%, #142b5f 100%);
-  background-size: 48px 48px, 48px 48px, 100% 100%;
+    linear-gradient(135deg, rgba(196, 22, 28, 0.75) 0%, rgba(161, 15, 20, 0.6) 50%, rgba(11, 30, 60, 0.5) 100%),
+    linear-gradient(180deg, rgba(0,0,0,0.4) 0%, transparent 50%);
+  background-size: 100% 100%, 100% 100%;
+  background-position: 0 0, 0 0;
+}
+.hero-full-bg.has-bg-image {
+  background-image: 
+    linear-gradient(135deg, rgba(196, 22, 28, 0.72) 0%, rgba(161, 15, 20, 0.55) 50%, rgba(11, 30, 60, 0.45) 100%),
+    linear-gradient(180deg, rgba(0,0,0,0.35) 0%, transparent 50%),
+    var(--hero-bg-image);
+  background-size: 100% 100%, 100% 100%, cover;
   background-position: 0 0, 0 0, 0 0;
+}
+
+/* Animated product screen (LED display content effect) */
+@keyframes hero-screen-gradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+@keyframes hero-particle-float {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.9; }
+  25% { transform: translate(8px, -12px) scale(1.1); opacity: 1; }
+  50% { transform: translate(-5px, -20px) scale(0.95); opacity: 0.85; }
+  75% { transform: translate(12px, -8px) scale(1.05); opacity: 1; }
+}
+@keyframes hero-particle-float-2 {
+  0%, 100% { transform: translate(0, 0); opacity: 0.7; }
+  33% { transform: translate(-10px, 15px); opacity: 1; }
+  66% { transform: translate(6px, 8px); opacity: 0.8; }
+}
+@keyframes hero-glow-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+.hero-product-screen {
+  background: linear-gradient(
+    125deg,
+    var(--color-dark) 0%,
+    var(--color-accent) 40%,
+    var(--color-dark) 70%,
+    var(--color-accent) 100%
+  );
+  background-size: 200% 200%;
+  animation: hero-screen-gradient 8s ease-in-out infinite;
+}
+.hero-product-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgb(var(--light-rgb) / 0.12) 0%, transparent 50%),
+              radial-gradient(circle at 70% 70%, rgb(var(--accent-rgb) / 0.18) 0%, transparent 45%);
+  animation: hero-glow-pulse 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Hero slide: text and image animate bottom-to-top on every slide change, with time delay for image */
+@keyframes hero-enter-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(56px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-enter-from-bottom {
+  animation: hero-enter-from-bottom 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+/* Image animates after text — delay so it runs after every scroll/slide change */
+.hero-enter-from-bottom-delay-img {
+  animation: hero-enter-from-bottom 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.28s forwards;
+  opacity: 0;
 }

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const stats = [
-  { value: 50, suffix: "+", label: "Products" },
+  { value: 5, suffix: "", label: "Core Services" },
   { value: 25000, suffix: "+", label: "Installations" },
   { value: 1500, suffix: "+", label: "Happy Customers" },
   { value: 35, suffix: "", label: "Offices Worldwide" },
@@ -62,15 +62,14 @@ export function StatsSection() {
     <section className="section-padding bg-[var(--neutral)]">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="fade-up">
-          <h2 className="text-center text-2xl font-bold tracking-tight text-[var(--charcoal)] sm:text-3xl">
-            Figures Worldwide
-          </h2>
+          <p className="section-label text-center">Our Reach</p>
+          <h2 className="section-title mt-3 text-center">Figures Worldwide</h2>
         </ScrollReveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           {stats.map((stat, i) => (
             <ScrollReveal key={stat.label} animation="fade-up" delay={i * 80}>
-              <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 text-center transition-all hover:border-[var(--brand-red)]/30 hover:shadow-md">
+              <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 text-center shadow-[var(--shadow-card)] transition-all hover:border-[var(--brand-red)]/20 hover:shadow-[var(--shadow-card-hover)]">
                 <div className="text-3xl font-bold text-[var(--brand-red)] sm:text-4xl">
                   <AnimatedNumber target={stat.value} suffix={stat.suffix} />
                 </div>

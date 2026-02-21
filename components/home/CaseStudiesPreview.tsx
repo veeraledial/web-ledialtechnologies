@@ -9,26 +9,22 @@ export function CaseStudiesPreview() {
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="fade-up">
           <div className="text-center">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-[var(--brand-red)]">
-            Case Studies
-          </h2>
-          <h3 className="mt-4 text-3xl font-bold tracking-tight text-[var(--charcoal)] sm:text-4xl">
-            Proven Results Worldwide
-          </h3>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-[var(--muted)]">
-            See how leading organizations use LaDial LED displays to transform their spaces.
-          </p>
+            <p className="section-label">Case Studies</p>
+            <h2 className="section-title mt-3">Proven Results Worldwide</h2>
+            <p className="section-desc mx-auto mt-4 max-w-2xl">
+              See how leading organizations use LaDial solutions to transform spaces with impactful visuals and reliable installations.
+            </p>
           </div>
         </ScrollReveal>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 lg:grid-cols-3">
           {FEATURED_PROJECTS.map((project, i) => (
             <ScrollReveal key={project.id} animation="fade-up" delay={i * 100}>
               <Link
                 href={`/projects/${project.slug}`}
-                className="group block overflow-hidden rounded-[8px] border border-[var(--border)] bg-[var(--surface)] transition-all hover-lift hover:border-[var(--brand-red)]/30"
+                className="group block overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--card)] shadow-[var(--shadow-card)] transition-all hover-lift hover:border-[var(--brand-red)]/20 hover:shadow-[var(--shadow-card-hover)]"
               >
-              <div className="aspect-video bg-gradient-to-br from-[var(--neutral-dark)] to-[var(--border)] transition group-hover:from-[var(--brand-navy)]/10 group-hover:to-[var(--brand-red)]/10" />
+              <div className="aspect-video bg-gradient-to-br from-[var(--neutral-dark)] to-[var(--border)] transition duration-300 group-hover:from-[var(--brand-navy)]/15 group-hover:to-[var(--brand-red)]/10" />
               <div className="p-6">
                 <p className="text-sm font-medium text-[var(--brand-red)]">
                   {project.location}

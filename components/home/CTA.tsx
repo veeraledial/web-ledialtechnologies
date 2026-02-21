@@ -5,14 +5,22 @@ export function CTA() {
   return (
     <section className="section-padding">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-        <div className="rounded-[8px] bg-[var(--brand-navy)] px-8 py-16 text-center sm:px-12 lg:px-24" style={{ background: "linear-gradient(135deg, #0b1e3c 0%, #142b5f 100%)" }}>
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Ready to Illuminate Your Space?
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
-            Get a custom quote for your LED display project. Our team will help you find the perfect solution.
-          </p>
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
+        <div
+          className="relative overflow-hidden rounded-3xl px-8 py-20 text-center sm:px-12 lg:px-24"
+          style={{ background: "var(--color-dark)" }}
+        >
+          <div
+            className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top_right,_rgb(var(--accent-rgb)_/_0.14)_0%,transparent_55%)]"
+            aria-hidden
+          />
+          <div className="relative">
+            <h2 className="section-title text-[var(--color-light)] sm:text-4xl">
+              Ready to Illuminate Your Space?
+            </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-lg text-[var(--color-light)]/85">
+              Get a custom quote for indoor/outdoor LED displays, digital standees, or CCTV camera security. Our team will recommend the right setup for your site and budget.
+            </p>
+            <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link href="/contact">
               <Button variant="primary" size="lg" className="w-full sm:w-auto">
                 Get a Quote
@@ -23,6 +31,7 @@ export function CTA() {
                 Contact Us
               </Button>
             </Link>
+            </div>
           </div>
         </div>
       </div>

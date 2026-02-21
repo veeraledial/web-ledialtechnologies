@@ -31,19 +31,15 @@ export function ApplicationsCarousel() {
     <section className="section-padding bg-[var(--neutral)]">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="fade-up">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-[var(--brand-red)]">
-            Applications
-          </h2>
-          <h3 className="mt-4 text-3xl font-bold tracking-tight text-[var(--charcoal)] sm:text-4xl">
-            LED Displays for Every Vertical
-          </h3>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-[var(--muted)]">
-            Optimize your operations with specialized product solutions. Explore LED display technology designed for a wide range of applications.
+          <p className="section-label">Applications</p>
+          <h2 className="section-title mt-3">Built for Real‑World Applications</h2>
+          <p className="section-desc mx-auto mt-4 max-w-2xl">
+            From immersive visual communication to reliable surveillance—explore how our services support different environments.
           </p>
         </ScrollReveal>
 
         <ScrollReveal animation="fade-up" delay={100}>
-          <div className="mt-12 overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)]">
+          <div className="mt-14 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--card)] shadow-[var(--shadow-card)]">
             <div
               className="flex transition-transform duration-500 ease-out"
               style={{ transform: `translateX(-${activeIndex * 100}%)` }}
