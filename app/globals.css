@@ -52,9 +52,8 @@
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-smooth: 350ms cubic-bezier(0.22, 1, 0.36, 1);
-}
 
-@theme inline {
+  /* Theme aliases (formerly `@theme inline`) */
   --color-brand-navy: var(--brand-navy);
   --color-brand-red: var(--brand-red);
   --color-charcoal: var(--charcoal);
