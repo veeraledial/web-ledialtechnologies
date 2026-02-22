@@ -4,6 +4,8 @@ import { getServiceCategories } from "@/lib/data/services";
 import { SOLUTION_INDUSTRIES } from "@/types/solution";
 import { ALL_PROJECTS } from "@/lib/data/projects";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getBaseUrl();
 

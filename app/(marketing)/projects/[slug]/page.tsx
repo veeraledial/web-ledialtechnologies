@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getProjectBySlug } from "@/lib/data/projects";
+import { ALL_PROJECTS, getProjectBySlug } from "@/lib/data/projects";
 import { ProjectHero } from "@/components/projects/ProjectHero";
 import { ProjectGallery } from "@/components/projects/ProjectGallery";
 import { Button } from "@/components/ui/Button";
@@ -8,6 +8,12 @@ import { Button } from "@/components/ui/Button";
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return ALL_PROJECTS.map((p) => ({ slug: p.slug }));
+}
 
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;

@@ -1,7 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getServiceCategoryBySlug } from "@/lib/data/services";
+import { getServiceCategories, getServiceCategoryBySlug } from "@/lib/data/services";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getAbsoluteUrl, getBreadcrumbJsonLd } from "@/lib/utils/seo";
 import { asset } from "@/lib/utils/assets";
@@ -9,6 +9,14 @@ import { asset } from "@/lib/utils/assets";
 type PageProps = {
   params: Promise<{ category: string; subcategory: string }>;
 };
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getServiceCategories().flatMap((c) =>
+    (c.subcategories ?? []).map((s) => ({ category: c.slug, subcategory: s.slug }))
+  );
+}
 
 const LEGACY_CATEGORY_REDIRECTS: Record<string, string> = {
   "indoor-led-displays": "indoor-led-displays-services",

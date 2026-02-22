@@ -13,6 +13,12 @@ type PageProps = {
   params: Promise<{ industry: string }>;
 };
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return SOLUTION_INDUSTRIES.map((i) => ({ industry: i.slug }));
+}
+
 const VALID_INDUSTRIES = SOLUTION_INDUSTRIES.map((i) => i.slug);
 
 function isValidIndustry(value: string): value is SolutionIndustry {

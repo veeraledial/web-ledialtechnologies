@@ -14,14 +14,14 @@ export function HeaderClient({ navItems }: { navItems: NavItem[] }) {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[var(--color-light)]/10 bg-[var(--brand-footer)]">
-      <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center transition opacity-90 hover:opacity-100">
           <Image
             src={asset("/images/logo/logo.png")}
             alt="LaDial Technologies"
             width={160}
             height={44}
-            className="h-9 w-auto object-contain"
+            className="h-9 w-auto object-contain max-[360px]:h-8"
             priority
           />
         </Link>

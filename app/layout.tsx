@@ -37,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${openSans.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${openSans.variable} antialiased`} suppressHydrationWarning>
         <JsonLd data={ORGANIZATION_JSON_LD} />
         <RouteScrollManager />
         {children}

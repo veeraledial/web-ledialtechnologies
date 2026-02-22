@@ -32,7 +32,7 @@ export function NewsletterForm() {
           placeholder="your@email.com"
           required
           disabled={status === "loading"}
-          className="flex-1 rounded-xl border border-[var(--color-light)]/30 bg-[var(--color-light)]/10 px-4 py-2.5 text-sm text-[var(--color-light)] placeholder:text-[var(--color-light)]/50 transition focus:border-[var(--color-accent)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]/30 disabled:opacity-50"
+          className="min-w-0 flex-1 rounded-xl border border-[var(--color-light)]/30 bg-[var(--color-light)]/10 px-4 py-2.5 text-sm text-[var(--color-light)] placeholder:text-[var(--color-light)]/50 transition focus:border-[var(--color-accent)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]/30 disabled:opacity-50"
         />
         <Button type="submit" size="sm" disabled={status === "loading"}>
           {status === "loading" ? "..." : "Join"}

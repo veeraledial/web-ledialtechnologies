@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { ALL_PROJECTS, getProjectsByIndustry } from "@/lib/data/projects";
+import { ALL_PROJECTS } from "@/lib/data/projects";
 import { ProjectCard } from "@/components/projects/ProjectCard";
-import { SOLUTION_INDUSTRIES } from "@/types/solution";
 import { Button } from "@/components/ui/Button";
 
 export const metadata = {
@@ -10,13 +9,8 @@ export const metadata = {
     "Explore LED display installations by LaDial Technologies. Retail, broadcast, airports, corporate, and more.",
 };
 
-type PageProps = {
-  searchParams: Promise<{ industry?: string }>;
-};
-
-export default async function ProjectsPage({ searchParams }: PageProps) {
-  const { industry } = await searchParams;
-  const projects = industry ? getProjectsByIndustry(industry) : ALL_PROJECTS;
+export default function ProjectsPage() {
+  const projects = ALL_PROJECTS;
   return (
     <div>
       {/* Hero */}
@@ -28,43 +22,6 @@ export default async function ProjectsPage({ searchParams }: PageProps) {
           <p className="mt-4 max-w-2xl text-lg text-white/80">
             See how leading organizations use LaDial LED displays to transform their spaces. From retail to broadcast to transportation.
           </p>
-        </div>
-      </section>
-
-      {/* Filter by industry */}
-      <section className="border-b border-[var(--border)] bg-[var(--surface)] py-4">
-        <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-[var(--muted)]">Filter by industry:</p>
-          <div className="mt-2 flex flex-wrap gap-2">
-            <Link
-              href="/projects"
-              className={`rounded-[6px] px-4 py-2 text-sm font-medium ${
-                !industry
-                  ? "bg-[var(--brand-navy)] text-white"
-                  : "border border-[var(--border)] text-[var(--charcoal)] hover:border-[var(--brand-red)] hover:text-[var(--brand-red)]"
-              }`}
-            >
-              All
-            </Link>
-            {SOLUTION_INDUSTRIES.map((ind) => {
-              const count = ALL_PROJECTS.filter((p) => p.industry === ind.slug).length;
-              if (count === 0) return null;
-              const isActive = industry === ind.slug;
-              return (
-                <Link
-                  key={ind.slug}
-                  href={isActive ? "/projects" : `/projects?industry=${ind.slug}`}
-                  className={`rounded-[6px] px-4 py-2 text-sm font-medium ${
-                    isActive
-                      ? "bg-[var(--brand-navy)] text-white"
-                      : "border border-[var(--border)] text-[var(--charcoal)] hover:border-[var(--brand-red)] hover:text-[var(--brand-red)]"
-                  }`}
-                >
-                  {ind.label} ({count})
-                </Link>
-              );
-            })}
-          </div>
         </div>
       </section>
 

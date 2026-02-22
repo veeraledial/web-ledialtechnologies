@@ -1,7 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getServiceCategoryBySlug } from "@/lib/data/services";
+import { getServiceCategories, getServiceCategoryBySlug } from "@/lib/data/services";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getBreadcrumbJsonLd, getAbsoluteUrl } from "@/lib/utils/seo";
 import { asset } from "@/lib/utils/assets";
@@ -9,6 +9,12 @@ import { asset } from "@/lib/utils/assets";
 type PageProps = {
   params: Promise<{ category: string }>;
 };
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getServiceCategories().map((c) => ({ category: c.slug }));
+}
 
 const LEGACY_CATEGORY_REDIRECTS: Record<string, string> = {
   "indoor-led-displays": "indoor-led-displays-services",
@@ -60,7 +66,7 @@ export default async function ProductCategoryPage({ params }: PageProps) {
       {/* Hero */}
       <section className="relative overflow-hidden bg-[var(--brand-navy)] py-10 sm:py-12 lg:py-14">
         <div className="relative z-10 mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex flex-col-reverse gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="lg:w-[45%]">
               <h1
                 className="text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl lg:text-5xl"

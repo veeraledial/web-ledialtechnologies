@@ -12,6 +12,8 @@ const stats = [
   { value: 55, suffix: "+", label: "After Sales Centres" },
 ];
 
+const NUMBER_FORMAT = new Intl.NumberFormat("en-US");
+
 function AnimatedNumber({ target, suffix }: { target: number; suffix: string }) {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
@@ -51,7 +53,7 @@ function AnimatedNumber({ target, suffix }: { target: number; suffix: string }) 
 
   return (
     <span ref={ref}>
-      {count.toLocaleString()}
+      {NUMBER_FORMAT.format(count)}
       {suffix}
     </span>
   );
