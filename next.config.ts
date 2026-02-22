@@ -23,7 +23,6 @@ const nextConfig: NextConfig = {
       { pathname: "/images/**", search: "?v=*" },
     ],
   },
-  distDir: "docs", 
 };
 
 export default nextConfig;
