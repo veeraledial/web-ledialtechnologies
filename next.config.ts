@@ -1,10 +1,15 @@
 import type { NextConfig } from "next";
 const repoName = "web-ledialtechnologies";
+const isDev = process.env.NODE_ENV === "development";
+
 const nextConfig: NextConfig = {
   output: "export",
 
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
+  ...(!isDev && {
+    basePath: `/${repoName}`,         // app lives at /<repoName>
+    assetPrefix: `/${repoName}/`,     // make assets load from /<repoName>/_next
+  }),
+  
   images: {
     unoptimized: true,
     localPatterns: [
@@ -13,6 +18,7 @@ const nextConfig: NextConfig = {
       { pathname: "/images/**", search: "?v=*" },
     ],
   },
+  distDir: "docs", 
 };
 
 export default nextConfig;
