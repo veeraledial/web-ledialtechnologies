@@ -2,28 +2,23 @@ import Link from "next/link";
 import { ALL_PROJECTS } from "@/lib/data/projects";
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { Button } from "@/components/ui/Button";
+import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata = {
   title: "Case Studies",
   description:
-    "Explore LED display installations by LaDial Technologies. Retail, broadcast, airports, corporate, and more.",
+    "Explore LED display installations by Ledial Technologies. Retail, broadcast, airports, corporate, and more.",
 };
 
 export default function ProjectsPage() {
   const projects = ALL_PROJECTS;
   return (
     <div>
-      {/* Hero */}
-      <section className="bg-[var(--brand-navy)] py-10 sm:py-12 lg:py-14">
-        <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Case Studies
-          </h1>
-          <p className="mt-4 max-w-2xl text-lg text-white/80">
-            See how leading organizations use LaDial LED displays to transform their spaces. From retail to broadcast to transportation.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        label="Case Studies"
+        title="Case Studies"
+        subtitle="See how leading organizations use Ledial LED displays to transform their spaces—from retail to broadcast to transportation."
+      />
 
       {/* Projects grid */}
       <section className="section-padding bg-[var(--surface)]">
@@ -37,12 +32,12 @@ export default function ProjectsPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-[var(--brand-navy)]">
+      <section className="section-padding bg-[var(--neutral)]">
         <div className="mx-auto max-w-[1200px] px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-white sm:text-3xl">
+          <h2 className="text-2xl font-bold text-[var(--charcoal)] sm:text-3xl">
             Ready to Start Your Project?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-white/80">
+          <p className="mx-auto mt-4 max-w-xl text-[var(--muted)]">
             Let us help you achieve similar results. Get in touch for a consultation.
           </p>
           <Link href="/contact" className="mt-8 inline-block">

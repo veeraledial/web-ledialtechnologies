@@ -51,17 +51,6 @@ export default async function SolutionIndustryPage({ params }: PageProps) {
     <div>
       <SolutionHero solution={solution} />
 
-      <nav className="border-b border-[var(--border)] bg-[var(--surface)]">
-        <div className="mx-auto max-w-[1200px] px-4 py-4 sm:px-6 lg:px-8">
-          <Link
-            href="/solutions"
-            className="text-sm text-[var(--muted)] hover:text-[var(--brand-red)]"
-          >
-            ← Back to Solutions
-          </Link>
-        </div>
-      </nav>
-
       <ProblemSolution solution={solution} />
       <IndustryCases projects={relatedProjects} />
 

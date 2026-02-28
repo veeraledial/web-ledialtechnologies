@@ -117,7 +117,7 @@ export function SubcategoryScroller({ cards }: { cards: SubcategoryCard[] }) {
           <Link
             key={`${c.key}-${idx}`}
             href={c.href}
-            className="group block w-[260px] flex-none overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--card)] shadow-[var(--shadow-card)] transition-transform transition-colors duration-300 hover:scale-[1.02] hover:border-[var(--brand-red)]/20 min-[360px]:w-[300px] sm:w-[320px]"
+            className="group block w-[260px] flex-none overflow-hidden rounded-2xl bg-[var(--card)] transition-transform duration-300 hover:scale-[1.02] min-[360px]:w-[300px] sm:w-[320px]"
             draggable={false}
           >
             <div className="relative aspect-[16/10] bg-gradient-to-br from-[var(--neutral-dark)] to-[var(--border)] transition duration-300 group-hover:from-[var(--brand-navy)]/15 group-hover:to-[var(--brand-red)]/10">

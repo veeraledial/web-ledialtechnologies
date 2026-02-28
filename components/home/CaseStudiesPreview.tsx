@@ -12,12 +12,12 @@ export function CaseStudiesPreview() {
             <p className="section-label">Case Studies</p>
             <h2 className="section-title mt-3">Proven Results Worldwide</h2>
             <p className="section-desc mx-auto mt-4 max-w-2xl">
-              See how leading organizations use LaDial solutions to transform spaces with impactful visuals and reliable installations.
+              See how leading organizations use Ledial solutions to transform spaces with impactful visuals and reliable installations.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {FEATURED_PROJECTS.map((project, i) => (
             <ScrollReveal key={project.id} animation="fade-up" delay={i * 100}>
               <Link
@@ -41,7 +41,7 @@ export function CaseStudiesPreview() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-10 text-center">
           <Link href="/projects">
             <Button variant="outline" size="md">
               View All Case Studies

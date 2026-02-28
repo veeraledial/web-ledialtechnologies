@@ -5,7 +5,7 @@ import { VISION_MISSION } from "@/lib/data/about";
 export const metadata = {
   title: "Vision & Mission",
   description:
-    "LaDial Technologies' vision, mission, and core values. Innovation, quality, partnership, and sustainability.",
+    "Ledial Technologies' vision, mission, and core values. Innovation, quality, partnership, and sustainability.",
 };
 
 export default function VisionMissionPage() {

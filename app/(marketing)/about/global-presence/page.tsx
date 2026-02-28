@@ -5,7 +5,7 @@ import { GLOBAL_PRESENCE } from "@/lib/data/about";
 export const metadata = {
   title: "Global Presence",
   description:
-    "LaDial Technologies serves 40+ countries through regional offices and authorized distributors worldwide.",
+    "Ledial Technologies serves customers through regional offices and authorized distributors.",
 };
 
 export default function GlobalPresencePage() {

@@ -8,8 +8,8 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 const icons: Record<string, string> = {
   retail: "🛒",
   "control-rooms": "🖥️",
-  "broadcast-studios": "📺",
-  "airports-transportation": "✈️",
+  automotive: "🚗",
+  "airports-transportation": "🚌",
   corporate: "🏢",
   "events-entertainment": "🎭",
   education: "📚",
@@ -39,7 +39,7 @@ export function ApplicationsCarousel() {
         </ScrollReveal>
 
         <ScrollReveal animation="fade-up" delay={100}>
-          <div className="mt-14 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--card)] shadow-[var(--shadow-card)]">
+          <div className="mt-10 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--card)] shadow-[var(--shadow-card)]">
             <div
               className="flex transition-transform duration-500 ease-out"
               style={{ transform: `translateX(-${activeIndex * 100}%)` }}
@@ -47,13 +47,13 @@ export function ApplicationsCarousel() {
               {SOLUTION_INDUSTRIES.map((item) => (
                 <div
                   key={item.slug}
-                  className="min-w-full shrink-0 p-8 sm:p-12"
+                  className="min-w-full shrink-0 p-6 sm:p-10"
                 >
-                  <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="flex items-center gap-4">
                       <span className="text-5xl">{icons[item.slug] ?? "📌"}</span>
                       <h4 className="text-2xl font-bold text-[var(--charcoal)]">
-                        {item.label}
+                        {item.slug === "airports-transportation" ? "Transportation" : item.label}
                       </h4>
                     </div>
                     <div className="sm:col-span-2 flex items-center">

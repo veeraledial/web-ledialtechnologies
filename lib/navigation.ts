@@ -22,8 +22,8 @@ export function getMainNav(): NavItem[] {
       children: [
         { label: "Retail", href: "/solutions/retail" },
         { label: "Control Rooms", href: "/solutions/control-rooms" },
-        { label: "Broadcast Studios", href: "/solutions/broadcast-studios" },
-        { label: "Airports & Transportation", href: "/solutions/airports-transportation" },
+        { label: "Automotive", href: "/solutions/automotive" },
+        { label: "Transportation", href: "/solutions/airports-transportation" },
         { label: "Corporate", href: "/solutions/corporate" },
         { label: "Events & Entertainment", href: "/solutions/events-entertainment" },
         { label: "Education", href: "/solutions/education" },
@@ -37,7 +37,6 @@ export function getMainNav(): NavItem[] {
       children: [
         { label: "Contact Us", href: "/contact" },
         { label: "Technical Support", href: "/support" },
-        { label: "Become a Distributor", href: "/distributors" },
       ],
     },
   ];

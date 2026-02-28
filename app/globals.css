@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* LaDial — Theme (logo-inspired): Navy + Red + clean neutrals */
+/* Ledial — Theme (logo-inspired): Navy + Red + clean neutrals */
 :root {
   /* Brand palette */
   --color-light: #f8fafc; /* near-white */
@@ -89,6 +89,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Consistent pointer cursor for interactive controls */
+a[href],
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+summary {
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled,
+[role="button"][aria-disabled="true"],
+a[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
 /* Hide scrollbars but keep scrolling */
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE/Edge legacy */
@@ -101,13 +119,13 @@ body {
 @layer components {
   /* Section spacing */
   .section-padding {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
   }
   @media (min-width: 1024px) {
     .section-padding {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+      padding-top: 3.25rem;
+      padding-bottom: 3.25rem;
     }
   }
 

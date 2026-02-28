@@ -5,7 +5,7 @@ import { FACILITIES } from "@/lib/data/about";
 export const metadata = {
   title: "Manufacturing Facilities",
   description:
-    "LaDial Technologies' 50,000 sqm manufacturing facility. R&D, automated production, quality lab, and logistics.",
+    "Ledial Technologies' manufacturing capabilities. R&D, production, quality processes, and logistics.",
 };
 
 export default function FacilitiesPage() {

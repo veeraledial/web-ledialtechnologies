@@ -11,7 +11,7 @@ export function getAbsoluteUrl(path: string) {
 export const ORGANIZATION_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "LaDial Technologies",
+  name: "Ledial Technologies",
   url: BASE_URL,
   logo: `${BASE_URL}/images/logo/logo.png`,
   description:
@@ -41,7 +41,7 @@ export function getProductJsonLd(product: {
     url: product.url,
     brand: {
       "@type": "Brand",
-      name: "LaDial Technologies",
+      name: "Ledial Technologies",
     },
   };
 }
@@ -66,7 +66,7 @@ export function getArticleJsonLd(article: {
     url: article.url,
     publisher: {
       "@type": "Organization",
-      name: "LaDial Technologies",
+      name: "Ledial Technologies",
       logo: {
         "@type": "ImageObject",
         url: `${BASE_URL}/images/logo/logo.png`,
@@ -80,7 +80,7 @@ export function getLocalBusinessJsonLd() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": `${BASE_URL}/contact`,
-    name: "LaDial Technologies",
+    name: "Ledial Technologies",
     url: BASE_URL,
     description: "Professional LED display manufacturer and solutions provider.",
     email: "info@ladial.com",

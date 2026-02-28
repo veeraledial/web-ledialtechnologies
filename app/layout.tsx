@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ladialtechnologies.com"
   ),
   title: {
-    default: "LaDial Technologies | Professional LED Display Solutions",
-    template: "%s | LaDial Technologies",
+    default: "Ledial Technologies | Professional LED Display Solutions",
+    template: "%s | Ledial Technologies",
   },
   description:
     "Professional services for indoor/outdoor LED displays, digital standees (A-type & I-type), and CCTV camera security—delivered with installation and support.",

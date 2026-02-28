@@ -1,8 +1,14 @@
+import { PageHero } from "@/components/layout/PageHero";
+
 export default function TermsPage() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold">Terms of Use</h1>
-      <p className="mt-4 text-[var(--muted)]">Coming soon.</p>
+    <div>
+      <PageHero label="Legal" title="Terms of Use" subtitle="Our terms and conditions for using the website." />
+      <section className="section-padding bg-[var(--surface)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="text-[var(--muted)]">Coming soon.</p>
+        </div>
+      </section>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { COMPANY_OVERVIEW } from "@/lib/data/about";
 export const metadata = {
   title: "Company Overview",
   description:
-    "Learn about LaDial Technologies - our history, manufacturing capabilities, and commitment to LED display excellence.",
+    "Learn about Ledial Technologies - our history, capabilities, and commitment to LED display and CCTV excellence.",
 };
 
 export default function CompanyOverviewPage() {

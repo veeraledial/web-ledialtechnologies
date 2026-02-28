@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 export const metadata = {
   title: "Careers",
   description:
-    "Join LaDial Technologies. We're hiring for Engineering, Sales, Operations, Marketing, and Customer Support.",
+    "Join Ledial Technologies. We're hiring for Engineering, Sales, Operations, Marketing, and Customer Support.",
 };
 
 export default function CareersPage() {

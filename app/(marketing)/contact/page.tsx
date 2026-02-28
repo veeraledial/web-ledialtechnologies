@@ -1,11 +1,12 @@
 import { ContactForm } from "@/components/forms/ContactForm";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getLocalBusinessJsonLd, getBreadcrumbJsonLd, getAbsoluteUrl } from "@/lib/utils/seo";
+import { PageHero } from "@/components/layout/PageHero";
 
 export const metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with LaDial Technologies. Request a quote, ask about our LED display solutions, or reach our sales team.",
+    "Get in touch with Ledial Technologies. Request a quote, ask about our LED display solutions, or reach our sales team.",
 };
 
 export default function ContactPage() {
@@ -18,17 +19,11 @@ export default function ContactPage() {
   return (
     <div>
       <JsonLd data={[contactJsonLd, breadcrumbJsonLd]} />
-      {/* Hero */}
-      <section className="bg-[var(--brand-navy)] py-10 sm:py-12 lg:py-14">
-        <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Contact Us
-          </h1>
-          <p className="mt-4 max-w-2xl text-lg text-white/80">
-            Have a question or want to discuss your LED display project? We&apos;d love to hear from you.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        label="Contact"
+        title="Contact Us"
+        subtitle="Have a question or want to discuss your LED display project? We’d love to hear from you."
+      />
 
       <section className="section-padding bg-[var(--surface)]">
         <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">

@@ -1,6 +1,5 @@
 import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { AboutIntro } from "@/components/home/AboutIntro";
-import { StatsSection } from "@/components/home/StatsSection";
 import { ProductCategoriesGrid } from "@/components/home/ProductCategoriesGrid";
 import { IndustrySolutions } from "@/components/home/IndustrySolutions";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
@@ -13,7 +12,6 @@ export default function HomePage() {
     <>
       <HeroCarousel />
       <AboutIntro />
-      <StatsSection />
       <ProductCategoriesGrid />
       <IndustrySolutions />
       <WhyChooseUs />

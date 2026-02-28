@@ -7,7 +7,7 @@
         "slug": "standee-a-type-display-services",
         "hero": {
           "order": 3,
-          "titleLines": ["STANDEE A‑TYPE", "DISPLAY SERVICE"],
+          "titleLines": ["STANDEE A‑TYPE", "DISPLAYS"],
           "subtitle": "Premium A‑type digital standees for malls, retail stores, and corporate spaces.",
           "description": "Supply, setup, and service support included—built for high-impact promotions and reliable everyday operation.",
           "ctaLabel": "Know More",
@@ -78,7 +78,7 @@
         "slug": "outdoor-led-display-services",
         "hero": {
           "order": 2,
-          "titleLines": ["OUTDOOR LED", "DISPLAY SERVICE"],
+          "titleLines": ["OUTDOOR LED", "DISPLAYS"],
           "subtitle": "High‑brightness, weatherproof outdoor screens for signage and advertising.",
           "description": "Installed and supported end‑to‑end for 24/7 visibility—ideal for signboards, facades, and large-format outdoor deployments.",
           "ctaLabel": "Know More",
@@ -169,7 +169,7 @@
         "slug": "indoor-led-displays-services",
         "hero": {
           "order": 1,
-          "titleLines": ["INDOOR LED", "DISPLAYS SERVICE"],
+          "titleLines": ["INDOOR LED", "DISPLAYS"],
           "subtitle": "Fine‑pitch indoor displays with complete installation & support.",
           "description": "Designed for showrooms, retail, offices, and control rooms—high clarity, smooth visuals, and dependable long-term performance.",
           "ctaLabel": "Know More",
@@ -258,7 +258,7 @@
         "slug": "standees-double-sided-display-services",
         "hero": {
           "order": 6,
-          "titleLines": ["DOUBLE-SIDED", "STANDEES SERVICES"],
+          "titleLines": ["DOUBLE-SIDED", "STANDEES"],
           "subtitle": "Dual-view digital standees designed to engage audiences from both directions.",
           "description": "Ideal for malls, corridors, airports, exhibitions, and high-traffic areas where visibility from multiple angles matters.",
           "ctaLabel": "Know More",
@@ -328,7 +328,7 @@
         "slug": "hanging-standees-services",
         "hero": {
           "order": 7,
-          "titleLines": ["HANGING", "STANDEES SERVICES"],
+          "titleLines": ["HANGING", "STANDEES"],
           "subtitle": "Overhead and facade-ready digital display solutions for maximum visibility.",
           "description": "Lightweight, low wind-load designs suited for stages, atriums, retail windows, and large-scale architectural installs.",
           "ctaLabel": "Know More",
@@ -400,7 +400,7 @@
         "slug": "standee-i-type-display-services",
         "hero": {
           "order": 4,
-          "titleLines": ["STANDEE I‑TYPE", "DISPLAY SERVICE"],
+          "titleLines": ["STANDEE I‑TYPE", "DISPLAYS"],
           "subtitle": "Slim I‑type digital standees for focused messaging and promotions.",
           "description": "Quick deployment with content guidance and ongoing support—ideal for entrances, aisles, reception areas, and event zones.",
           "ctaLabel": "Know More",
@@ -471,7 +471,7 @@
         "slug": "cctv-cameras",
         "hero": {
           "order": 5,
-          "titleLines": ["CCTV CAMERA", "SECURITY SERVICES"],
+          "titleLines": ["CCTV CAMERA", "SECURITY"],
           "subtitle": "Complete CCTV supply and installation for safer premises.",
           "description": "Site survey, camera layout planning, DVR/NVR recording setup, remote viewing support, and maintenance for offices, warehouses, retail, and residential sites.",
           "ctaLabel": "Know More",
@@ -598,7 +598,7 @@
         "slug": "touch-screen-standees-interactive-services",
         "hero": {
           "order": 8,
-          "titleLines": ["TOUCH-SCREEN", "STANDEES SERVICES"],
+          "titleLines": ["TOUCH-SCREEN", "STANDEES"],
           "subtitle": "Interactive standees and kiosks for catalogs, POS, wayfinding, and engagement.",
           "description": "Built for smooth touch experiences and content workflows—ideal for retail, corporate lobbies, exhibitions, and customer-service desks.",
           "ctaLabel": "Know More",

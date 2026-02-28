@@ -6,7 +6,7 @@ export function CTA() {
     <section className="section-padding">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <div
-          className="relative overflow-hidden rounded-3xl px-8 py-20 text-center sm:px-12 lg:px-24"
+          className="relative overflow-hidden rounded-3xl px-7 py-14 text-center sm:px-12 sm:py-16 lg:px-24"
           style={{ background: "var(--color-dark)" }}
         >
           <div
@@ -17,10 +17,10 @@ export function CTA() {
             <h2 className="section-title text-[var(--color-light)] sm:text-4xl">
               Ready to Illuminate Your Space?
             </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-lg text-[var(--color-light)]/85">
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-[var(--color-light)]/85">
               Get a custom quote for indoor/outdoor LED displays, digital standees, or CCTV camera security. Our team will recommend the right setup for your site and budget.
             </p>
-            <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link href="/contact">
               <Button variant="primary" size="lg" className="w-full sm:w-auto">
                 Get a Quote

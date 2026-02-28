@@ -14,12 +14,12 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block transition opacity-90 hover:opacity-100">
               <span className="text-xl font-bold tracking-tight text-[var(--color-light)]">
-                LaDial
+                Ledial
               </span>
               <span className="text-sm font-medium text-[var(--color-light)]/80"> Technologies</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-[var(--color-light)]/75 max-w-xs">
-              Professional services for indoor/outdoor LED displays, digital standees, and CCTV camera security—delivered with installation and support.
+              Ledial Technologies Pvt. Ltd. delivers advanced LED display and CCTV surveillance solutions designed to enhance visibility, communication, and security—with a strong commitment to quality and innovation.
             </p>
           </div>
 
@@ -97,7 +97,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="text-sm text-[var(--color-light)]/55">
-            © {currentYear} LaDial Technologies. All rights reserved.
+            © {currentYear} Ledial Technologies. All rights reserved.
           </p>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { CERTIFICATIONS_LIST } from "@/lib/data/about";
 export const metadata = {
   title: "Certifications",
   description:
-    "LaDial Technologies certifications: CE, FCC, ISO 9001, RoHS, and more. Globally recognized quality and safety standards.",
+    "Ledial Technologies certifications: CE, FCC, ISO 9001, RoHS, and more. Globally recognized quality and safety standards.",
 };
 
 export default function CertificationsPage() {

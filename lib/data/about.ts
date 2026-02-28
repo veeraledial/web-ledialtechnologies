@@ -4,7 +4,7 @@ export const COMPANY_OVERVIEW = {
   employees: "500+",
   countries: "40+",
   installations: "5000+",
-  intro: `LaDial Technologies was founded with a single mission: to push the boundaries of LED display technology and deliver solutions that exceed our customers' expectations. What started as a small team of engineers has grown into a global manufacturer serving Fortune 500 companies, broadcast networks, retail giants, and transportation hubs worldwide.
+  intro: `Ledial Technologies was founded with a single mission: to push the boundaries of LED display technology and deliver solutions that exceed our customers' expectations. What started as a small team of engineers has grown into a global manufacturer serving Fortune 500 companies, broadcast networks, retail giants, and transportation hubs worldwide.
 
 Our state-of-the-art manufacturing facility in Shenzhen spans 50,000 square meters and houses advanced R&D laboratories, automated production lines, and rigorous quality control systems. Every display we produce undergoes extensive testing to ensure 24/7 reliability in the most demanding environments.
 
@@ -89,7 +89,7 @@ export const LEADERSHIP = [
 ];
 
 export const GLOBAL_PRESENCE = {
-  intro: `LaDial Technologies serves customers across six continents through a network of regional offices, authorized distributors, and certified installers. Our global presence ensures local support, timely delivery, and expertise tailored to each market.`,
+  intro: `Ledial Technologies serves customers across six continents through a network of regional offices, authorized distributors, and certified installers. Our global presence ensures local support, timely delivery, and expertise tailored to each market.`,
   regions: [
     { name: "Asia Pacific", offices: "Singapore, Hong Kong, Dubai", markets: "UAE, India, Southeast Asia, Australia" },
     { name: "Europe", offices: "Frankfurt, London", markets: "UK, Germany, France, Benelux, Nordics" },
@@ -108,7 +108,7 @@ export const CERTIFICATIONS_LIST = [
 
 export const CAREERS = {
   headline: "Join Our Team",
-  intro: `At LaDial Technologies, we're building the future of visual communication. We're looking for talented individuals who share our passion for innovation and excellence.`,
+  intro: `At Ledial Technologies, we're building the future of visual communication. We're looking for talented individuals who share our passion for innovation and excellence.`,
   benefits: [
     "Competitive salary and benefits",
     "Professional development programs",

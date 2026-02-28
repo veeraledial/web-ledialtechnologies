@@ -2,6 +2,7 @@ export type SolutionIndustry =
   | "retail"
   | "control-rooms"
   | "broadcast-studios"
+  | "automotive"
   | "airports-transportation"
   | "corporate"
   | "events-entertainment"
@@ -15,6 +16,8 @@ export interface Solution {
   title: string;
   problem: string;
   solution: string;
+  keyBenefits?: string[];
+  useCases?: string[];
   caseStudyIds: string[];
   images: string[];
   metaTitle: string;
@@ -24,8 +27,8 @@ export interface Solution {
 export const SOLUTION_INDUSTRIES: { slug: SolutionIndustry; label: string }[] = [
   { slug: "retail", label: "Retail" },
   { slug: "control-rooms", label: "Control Rooms" },
-  { slug: "broadcast-studios", label: "Broadcast Studios" },
-  { slug: "airports-transportation", label: "Airports & Transportation" },
+  { slug: "automotive", label: "Automotive" },
+  { slug: "airports-transportation", label: "Transportation" },
   { slug: "corporate", label: "Corporate" },
   { slug: "events-entertainment", label: "Events & Entertainment" },
   { slug: "education", label: "Education" },

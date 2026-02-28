@@ -5,7 +5,7 @@ import { LEADERSHIP } from "@/lib/data/about";
 export const metadata = {
   title: "Leadership Team",
   description:
-    "Meet the LaDial Technologies leadership team. Experienced executives driving LED display innovation.",
+    "Meet the Ledial Technologies leadership team. Experienced professionals driving LED display and CCTV innovation.",
 };
 
 export default function LeadershipPage() {

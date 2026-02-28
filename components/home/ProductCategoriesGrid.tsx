@@ -9,7 +9,7 @@ export function ProductCategoriesGrid() {
   const cards: SubcategoryCard[] = categories.flatMap((cat) =>
     (cat.subcategories ?? []).map((s) => ({
       key: `${cat.slug}/${s.slug}`,
-      href: `/products/${cat.slug}/${s.slug}`,
+      href: `/products/${cat.slug}`,
       label: s.name,
       tagline: cat.name,
       image: s.image ?? null,
@@ -17,7 +17,7 @@ export function ProductCategoriesGrid() {
   );
 
   return (
-    <section className="bg-[var(--surface)] py-10 sm:py-12">
+    <section className="section-padding bg-[var(--neutral)]">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="fade-up">
           <div className="mx-auto max-w-3xl text-center">
